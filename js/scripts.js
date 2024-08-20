@@ -115,29 +115,24 @@ function changeLanguage(lang) {
     // Add more elements to update as needed
 }
 
+document.querySelectorAll('.btn-book').forEach(button => {
+    button.addEventListener('click', function () {
+        const modalId = this.getAttribute('data-modal');
+        const modal = document.getElementById(modalId);
+        modal.style.display = 'block';
+    });
+});
 
-// Get modal element
-var modal = document.getElementById("moreDetailsModal");
+document.querySelectorAll('.close').forEach(span => {
+    span.addEventListener('click', function () {
+        document.querySelectorAll('.modal').forEach(modal => {
+            modal.style.display = 'none';
+        });
+    });
+});
 
-// Get open modal button
-var btn = document.getElementById("moreDetailsBtn");
-
-// Get close button
-var span = document.getElementsByClassName("close")[0];
-
-// Listen for open click
-btn.onclick = function () {
-    modal.style.display = "block";
-}
-
-// Listen for close click
-span.onclick = function () {
-    modal.style.display = "none";
-}
-
-// Listen for outside click
 window.onclick = function (event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
+    if (event.target.classList.contains('modal')) {
+        event.target.style.display = 'none';
     }
 }

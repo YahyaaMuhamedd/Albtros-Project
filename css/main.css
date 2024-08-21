@@ -856,9 +856,7 @@ span {
   margin-bottom: 10px;
 }
 
-.call {
-  display: none;
-}
+
 
 
 @media only screen and (max-width: 991.9px) {
@@ -868,9 +866,6 @@ span {
 
   }
 
-  .call {
-    display: block;
-  }
 }
 
 .modal {

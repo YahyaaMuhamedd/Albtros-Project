@@ -42,11 +42,11 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                    <li class="nav-item"><a class="nav-link text-warning" href="index.html"><i
-                                class="fa-solid fa-house"></i> Home
+                    <li class="nav-item"><a class="nav-link text-warning" href="index.html">
+                            <i class="fa-solid fa-house"></i> Home
                         </a></li>
                     <li class="nav-item dropdown ">
-                        <a class="nav-link dropdown-toggle text-warning " href="trips.html" role="button"
+                        <a class="nav-link dropdown-toggle text-warning " id="trips" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Trips
                         </a>
@@ -70,15 +70,18 @@
                     </li>
                     <li class="nav-item"><a class="nav-link text-warning" href="travels.html">Travels</a></li>
                     <li class="nav-item"><a class="nav-link text-warning" href="About.html">About</a></li>
-                    <li class="nav-item dropdown d-none">
+                    <li class="nav-item dropdown ">
                         <a class="nav-link dropdown-toggle text-warning" href="#" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Language
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#" onclick="changeLanguage('en')">English</a></li>
-                            <li><a class="dropdown-item" href="#" onclick="changeLanguage('ar')">العربية</a></li>
-                            <li><a class="dropdown-item" href="#" onclick="changeLanguage('ru')">Русский</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="changeLanguage('en')"
+                                    id="english-btn">English</a></li>
+                            <!-- <li><a class="dropdown-item" href="#" onclick="changeLanguage('ar')"
+                                    id="arabic-btn">العربية</a></li> -->
+                            <li><a class="dropdown-item" href="#" onclick="changeLanguage('ru')"
+                                    id="russian-btn">Русский</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -96,423 +99,390 @@
         </div>
     </header>
     <!-- Services-->
-    <!--<section class="page-section" id="services">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Services</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-                <div class="row text-center">
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">E-Commerce</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Responsive Design</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Web Security</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                    </div>
-                </div>
-            </div>
-        </section>-->
 
-    <!-- <div class="py-5">
-        <div class="container">
-            <div class="row ">
-                <div class="col-md-3 col-sm-6 my-3">
-                    <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal8"><img
-                            class=" img-brand d-block mx-auto " src="assets/img/logos/1.png" alt="..."
-                            aria-label="Microsoft Logo" /></a>
-                </div>
-                <div class="col-md-3 col-sm-6 my-3">
-                    <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1"><img
-                            class=" img-brand d-block mx-auto " src="assets/img/logos/1.jpg" alt="..."
-                            aria-label="Google Logo" /></a>
-                </div>
-                <div class="col-md-3 col-sm-6 my-3">
-                    <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2"><img
-                            class=" img-brand d-block mx-auto " src="assets/img/logos/3.png" alt="..."
-                            aria-label="Facebook Logo" /></a>
-                </div>
-                <div class="col-md-3 col-sm-6 my-3">
-                    <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5"><img
-                            class=" img-brand d-block mx-auto " src="assets/img/logos/4.png" alt="..."
-                            aria-label="IBM Logo" /></a>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <div class="container gap-4">
-        <h1 class="display-4 text-center main-color fw-bold mb-5">Welcome to Albatros Travel</h1>
+    <div class="container">
         <div class="row ">
-            <div class="col-md-6 m-auto text-center fs-5 mb-5">
-                <p>Now book your Egypt excursions online . We offer a wide range of tours & activities in Egypt and
-                    tickets for the most popular attractions. We are in Egypt and specifically for Egypt holidays ,
-                    Egypt excursions & day trips and tours throughout Egypt.</p>
+            <div class="col-md-3 col-sm-6 my-3">
+                <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal8"><img
+                        class=" img-brand d-block mx-auto " src="assets/img/logos/1.png" alt="..."
+                        aria-label="Microsoft Logo" /></a>
             </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-md-2 col-sm-6 col-xs-6">
-                <div class="feature">
-                    <i class="fas fa-times-circle"></i>
-                    <p class="text-black">Free cancellation</p>
-                </div>
+            <div class="col-md-3 col-sm-6 my-3">
+                <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1"><img
+                        class=" img-brand d-block mx-auto " src="assets/img/logos/1.jpg" alt="..."
+                        aria-label="Google Logo" /></a>
             </div>
-            <div class="col-md-2 col-sm-6 col-xs-6">
-                <div class="feature">
-                    <i class="fas fa-coffee"></i>
-                    <p class="text-black">No coffee trip</p>
-                </div>
+            <div class="col-md-3 col-sm-6 my-3">
+                <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2"><img
+                        class=" img-brand d-block mx-auto " src="assets/img/logos/3.png" alt="..."
+                        aria-label="Facebook Logo" /></a>
             </div>
-            <div class="col-md-2 col-sm-6 col-xs-6">
-                <div class="feature">
-                    <i class="fas fa-star"></i>
-                    <p class="text-black">High quality of service</p>
-                </div>
-            </div>
-            <div class="col-md-2 col-sm-6 col-xs-6">
-                <div class="feature">
-                    <i class="fas fa-tag"></i>
-                    <p class="text-black">Best price guarantee</p>
-                </div>
-            </div>
-            <div class="col-md-2 col-sm-6 col-xs-6">
-                <div class="feature">
-                    <i class="fas fa-shield-alt"></i>
-                    <p class="text-black">Insurance included</p>
-                </div>
+            <div class="col-md-3 col-sm-6 my-3">
+                <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5"><img
+                        class=" img-brand d-block mx-auto " src="assets/img/logos/4.png" alt="..."
+                        aria-label="IBM Logo" /></a>
             </div>
         </div>
     </div>
+    </div> -->
+    <div id="content">
 
-    <!-- Card Plls -->
-    <div class="cards my-5">
-        <div class="container">
-            <div class="row d-flex m-auto ">
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                    <a href="./trips/boattrips.html">
-                        <div class="card w-100 rounded-pill">
-                            <div class="img-info position-relative overflow-hidden rounded-pill">
-                                <img src="./assets/trips img/paradiseisland.jpg" class="card-img-top" alt="...">
-                                <div
-                                    class="caption text-center text-white position-absolute text-center d-flex flex-column justify-content-center align-items-center w-100 h-100">
-                                    <h1>
-                                        <a href="./trips/boattrips.html" class="text-decoration-none text-white"
-                                            style="font-size: 52px;">Boat
-                                            Trips</a>
-                                    </h1>
-
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                    <a href="./trips/safari.html">
-                        <div class="card w-100 rounded-pill">
-                            <div class="img-info position-relative overflow-hidden rounded-pill">
-                                <img src="./assets/trips img/Desert Safari.jpg" class="card-img-top"
-                                    alt="Desert Safari">
-                                <div
-                                    class="caption text-center text-white position-absolute text-center d-flex flex-column justify-content-center align-items-center w-100 h-100">
-                                    <h1>
-                                        <a href="./trips/safari.html" class="text-decoration-none text-white"
-                                            style="font-size: 52px;">
-                                            Safari
-                                        </a>
-                                    </h1>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                    <a href="./trips/diving.html">
-                        <div class="card w-100 rounded-pill">
-                            <div class="img-info position-relative overflow-hidden rounded-pill">
-                                <img src="./assets/trips img/Diving.jpeg" class="card-img-top" alt="Desert Safari">
-                                <div
-                                    class="caption text-center text-white position-absolute text-center d-flex flex-column justify-content-center align-items-center w-100 h-100">
-                                    <h1 class="fs-1 m-auto">
-                                        <a href="./trips/diving.html" class="text-decoration-none text-white "
-                                            style="font-size: 52px;">
-                                            Diving
-                                        </a>
-                                    </h1>
-
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                    <a href="./travels.html">
-                        <div class="card w-100 rounded-pill">
-                            <div class="img-info position-relative overflow-hidden rounded-pill">
-                                <img src="./assets/trips img/Cairo.png" class="card-img-top" alt="Desert Safari">
-                                <div
-                                    class="caption text-center text-white position-absolute text-center d-flex flex-column justify-content-center align-items-center w-100 h-100">
-                                    <h1 class="fs-1 m-auto">
-                                        <a href="./travels.html" class="text-decoration-none text-white "
-                                            style="font-size: 52px;">
-                                            Cairo
-                                        </a>
-                                    </h1>
-
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                    <a href="./travels.html">
-                        <div class="card w-100 rounded-pill">
-                            <div class="img-info position-relative overflow-hidden rounded-pill">
-                                <img src="./assets/trips img/Luxor.png" class="card-img-top" alt="Desert Safari">
-                                <div
-                                    class="caption text-center text-white position-absolute text-center d-flex flex-column justify-content-center align-items-center w-100 h-100">
-                                    <h1 class="fs-1 m-auto">
-                                        <a href="./travels.html" class="text-decoration-none text-white "
-                                            style="font-size: 52px;">
-                                            Luxor
-                                        </a>
-                                    </h1>
-
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3">
-                <h5>[Excursions from Hurghada, El Gouna, Makady]</h5>
-                <ul>
-                    <li>Private trip to Luxor</li>
-                    <li>Luxor two days private</li>
-                    <li>Private trip to Cairo</li>
-                    <li>Cairo day trip by plane</li>
-                    <li>Cairo two days private</li>
-                    <li>Cairo day tour à la carte (exclusive)</li>
-                    <li>Cairo Pyramids of Giza, Saqqara and Dahshur Exclusive</li>
-                    <li>Dendera excursion half day</li>
-                    <li>Dendera & Abydos day tour private</li>
-                    <li>Hurghada city tour</li>
-                    <li>El-Gouna city tour</li>
-                    <li>Aswan & Abu Simbel Two days private</li>
-                    <li>Monasteries of St. Antonios & St. Paul</li>
-                    <li>3 hours quad tour+camel ride</li>
-                    <li>5 hours quad tour + camel ride + dinner</li>
-                </ul>
-            </div>
-            <div class="col-md-3">
-                <h5>[Excursions from Marsa Alam]</h5>
-                <ul>
-                    <li>Private trip to Luxor</li>
-                    <li>Luxor two days private</li>
-                    <li>Private trip to Cairo</li>
-                    <li>Cairo day trip by plane</li>
-                    <li>Cairo two days private</li>
-                    <li>Cairo day tour à la carte (exclusive)</li>
-                    <li>Cairo Pyramids of Giza, Saqqara and Dahshur Exclusive</li>
-                    <li>Dendera excursion half day</li>
-                    <li>Dendera & Abydos day tour private</li>
-                    <li>Aswan & Abu Simbel Two days private</li>
-                    <li>Monasteries of St. Antonios & St. Paul</li>
-                    <li>3 hours quad tour+camel ride</li>
-                    <li>5 hours quad tour + camel ride + dinner</li>
-                </ul>
-            </div>
-            <div class="col-md-3">
-                <h5>[Excursions from El- Quseir]</h5>
-                <ul>
-                    <li>Private trip to Luxor</li>
-                    <li>Luxor two days private</li>
-                    <li>Private trip to Cairo</li>
-                    <li>Cairo day trip by plane</li>
-                    <li>Cairo two days private</li>
-                    <li>Cairo day tour à la carte (exclusive)</li>
-                    <li>Cairo Pyramids of Giza, Saqqara and Dahshur Exclusive</li>
-                    <li>Dendera excursion half day</li>
-                    <li>Dendera & Abydos day tour private</li>
-                    <li>Aswan & Abu Simbel Two days private</li>
-                    <li>Monasteries of St. Antonios & St. Paul</li>
-                    <li>3 hours quad tour+camel ride</li>
-                    <li>5 hours quad tour + camel ride + dinner</li>
-                </ul>
-            </div>
-            <div class="col-md-3">
-                <h5>[Safaga Port | Shore Excursions from Safaga]</h5>
-                <ul>
-                    <li>Private trip to Luxor</li>
-                    <li>Luxor 2 days excursion</li>
-                    <li>Dendera Abydos Excursion</li>
-                    <li>Sharm Elnaga Snorkeling</li>
-                    <li>Utopia Island Snorkeling</li>
-                    <li>Sindbad Submarine</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <!-- Special Feutres -->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 ">
-                <div class="special-features text-center">
-                    <h2>Our Special Features</h2>
-                    <p class="w-50 m-auto mb-2">Holidays are probably the most valuable time of the year for everyone.
-                        That's why we
-                        attach great
-                        importance to providing you with an interesting and relaxing time.</p>
-                    <a href="About.html" class="btn btn-light btn-primary">Who we are</a>
+        <div class="container gap-4">
+            <h1 class="display-4 text-center main-color fw-bold mb-5">Welcome to Albatros Travel</h1>
+            <div class="row ">
+                <div class="col-md-6 m-auto text-center fs-5 mb-5">
+                    <p>Now book your Egypt excursions online . We offer a wide range of tours & activities in Egypt and
+                        tickets for the most popular attractions. We are in Egypt and specifically for Egypt holidays ,
+                        Egypt excursions & day trips and tours throughout Egypt.</p>
                 </div>
             </div>
-            <div class="col-md-12">
-                <div class="feature-item w-100">
-                    <i class="feature-icon fas fa-flag"></i>
-                    <h3>Individual Excursions Throughout Egypt</h3>
-                    <p>We not only visit the most interesting sights, but also show you things off the beaten track.
-                    </p>
-                </div>
-                <div class="feature-item">
-                    <i class="feature-icon fas fa-euro-sign"></i>
-                    <h3>Fair Prices / No Extra Costs</h3>
-                    <p>We offer high quality and personal service at affordable prices.</p>
-                </div>
-                <div class="feature-item">
-                    <i class="feature-icon fas fa-camera"></i>
-                    <h3>Time for You</h3>
-                    <p>Thanks to our small group size, you will have enough time during the excursions to see
-                        everything
-                        at your leisure.</p>
-                </div>
-                <div class="feature-item">
-                    <i class="feature-icon fas fa-calendar-alt"></i>
-                    <h3>We Adapt to You</h3>
-                    <p>Most of our excursions can be customized to suit your schedule and needs.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Contact-->
-    <section class="page-section" id="contact">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase">Contact Us</h2>
-                <h3 class="section-subheading text-muted">We are at your service. Do not hesitate to contact us</h3>
-            </div>
-            <!-- * * * * * * * * * * * * * * *-->
-            <!-- * * SB Forms Contact Form * *-->
-            <!-- * * * * * * * * * * * * * * *-->
-            <!-- This form is pre-integrated with SB Forms.-->
-            <!-- To make this form functional, sign up at-->
-            <!-- https://startbootstrap.com/solution/contact-forms-->
-            <!-- to get an API token!-->
-            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                <div class="row align-items-stretch mb-5">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <!-- Name input-->
-                            <input class="form-control" id="name" type="text" placeholder="Your Name *"
-                                data-sb-validations="required" />
-                            <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                        </div>
-                        <div class="form-group">
-                            <!-- Email address input-->
-                            <input class="form-control" id="email" type="email" placeholder="Your Email *"
-                                data-sb-validations="required,email" />
-                            <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                            <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                        </div>
-                        <div class="form-group mb-md-0">
-                            <!-- Phone number input-->
-                            <input class="form-control" id="phone" type="tel" placeholder="Your Phone *"
-                                data-sb-validations="required" />
-                            <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group form-group-textarea mb-md-0">
-                            <!-- Message input-->
-                            <textarea class="form-control" id="message" placeholder="Your Message *"
-                                data-sb-validations="required"></textarea>
-                            <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.
-                            </div>
-                        </div>
+            <div class="row justify-content-center">
+                <div class="col-md-2 col-sm-6 col-xs-6">
+                    <div class="feature">
+                        <i class="fas fa-times-circle"></i>
+                        <p class="text-black">Free cancellation</p>
                     </div>
                 </div>
-                <!-- Submit success message-->
-                <!---->
-                <!-- This is what your users will see when the form-->
-                <!-- has successfully submitted-->
-                <div class="d-none" id="submitSuccessMessage">
-                    <div class="text-center text-white mb-3">
-                        <div class="fw-bolder">Form submission successful!</div>
-                        To activate this form, sign up at
-                        <br />
+                <div class="col-md-2 col-sm-6 col-xs-6">
+                    <div class="feature">
+                        <i class="fas fa-coffee"></i>
+                        <p class="text-black">No coffee trip</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-6 col-xs-6">
+                    <div class="feature">
+                        <i class="fas fa-star"></i>
+                        <p class="text-black">High quality of service</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-6 col-xs-6">
+                    <div class="feature">
+                        <i class="fas fa-tag"></i>
+                        <p class="text-black">Best price guarantee</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-6 col-xs-6">
+                    <div class="feature">
+                        <i class="fas fa-shield-alt"></i>
+                        <p class="text-black">Insurance included</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-                        <a aria-label="Chat on WhatsApp" href="https://wa.me/201152074894"> <img alt="Chat on WhatsApp"
-                                src="assets/img/portfolio/WhatsAppButtonGreenLarge.png" />
+
+
+        <!-- Card Plls -->
+        <div class="cards my-5">
+            <div class="container">
+                <div class="row d-flex m-auto ">
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <a href="./trips/boattrips.html">
+                            <div class="card w-100 rounded-pill">
+                                <div class="img-info position-relative overflow-hidden rounded-pill">
+                                    <img src="./assets/trips img/paradiseisland.jpg" class="card-img-top" alt="...">
+                                    <div
+                                        class="caption text-center text-white position-absolute text-center d-flex flex-column justify-content-center align-items-center w-100 h-100">
+                                        <h1>
+                                            <a href="./trips/boattrips.html" class="text-decoration-none text-white"
+                                                style="font-size: 52px;">Boat
+                                                Trips</a>
+                                        </h1>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <a href="./trips/safari.html">
+                            <div class="card w-100 rounded-pill">
+                                <div class="img-info position-relative overflow-hidden rounded-pill">
+                                    <img src="./assets/trips img/Desert Safari.jpg" class="card-img-top"
+                                        alt="Desert Safari">
+                                    <div
+                                        class="caption text-center text-white position-absolute text-center d-flex flex-column justify-content-center align-items-center w-100 h-100">
+                                        <h1>
+                                            <a href="./trips/safari.html" class="text-decoration-none text-white"
+                                                style="font-size: 52px;">
+                                                Safari
+                                            </a>
+                                        </h1>
+                                    </div>
+                                </div>
+                            </div>
                         </a>
 
-                        <!-- <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>-->
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <a href="./trips/diving.html">
+                            <div class="card w-100 rounded-pill">
+                                <div class="img-info position-relative overflow-hidden rounded-pill">
+                                    <img src="./assets/trips img/Diving.jpeg" class="card-img-top" alt="Desert Safari">
+                                    <div
+                                        class="caption text-center text-white position-absolute text-center d-flex flex-column justify-content-center align-items-center w-100 h-100">
+                                        <h1 class="fs-1 m-auto">
+                                            <a href="./trips/diving.html" class="text-decoration-none text-white "
+                                                style="font-size: 52px;">
+                                                Diving
+                                            </a>
+                                        </h1>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <a href="./travels.html">
+                            <div class="card w-100 rounded-pill">
+                                <div class="img-info position-relative overflow-hidden rounded-pill">
+                                    <img src="./assets/trips img/Cairo.png" class="card-img-top" alt="Desert Safari">
+                                    <div
+                                        class="caption text-center text-white position-absolute text-center d-flex flex-column justify-content-center align-items-center w-100 h-100">
+                                        <h1 class="fs-1 m-auto">
+                                            <a href="./travels.html" class="text-decoration-none text-white "
+                                                style="font-size: 52px;">
+                                                Cairo
+                                            </a>
+                                        </h1>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <a href="./travels.html">
+                            <div class="card w-100 rounded-pill">
+                                <div class="img-info position-relative overflow-hidden rounded-pill">
+                                    <img src="./assets/trips img/Luxor.png" class="card-img-top" alt="Desert Safari">
+                                    <div
+                                        class="caption text-center text-white position-absolute text-center d-flex flex-column justify-content-center align-items-center w-100 h-100">
+                                        <h1 class="fs-1 m-auto">
+                                            <a href="./travels.html" class="text-decoration-none text-white "
+                                                style="font-size: 52px;">
+                                                Luxor
+                                            </a>
+                                        </h1>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>[Excursions from Hurghada, El Gouna, Makady]</h5>
+                    <ul>
+                        <li>Private trip to Luxor</li>
+                        <li>Luxor two days private</li>
+                        <li>Private trip to Cairo</li>
+                        <li>Cairo day trip by plane</li>
+                        <li>Cairo two days private</li>
+                        <li>Cairo day tour à la carte (exclusive)</li>
+                        <li>Cairo Pyramids of Giza, Saqqara and Dahshur Exclusive</li>
+                        <li>Dendera excursion half day</li>
+                        <li>Dendera & Abydos day tour private</li>
+                        <li>Hurghada city tour</li>
+                        <li>El-Gouna city tour</li>
+                        <li>Aswan & Abu Simbel Two days private</li>
+                        <li>Monasteries of St. Antonios & St. Paul</li>
+                        <li>3 hours quad tour+camel ride</li>
+                        <li>5 hours quad tour + camel ride + dinner</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>[Excursions from Marsa Alam]</h5>
+                    <ul>
+                        <li>Private trip to Luxor</li>
+                        <li>Luxor two days private</li>
+                        <li>Private trip to Cairo</li>
+                        <li>Cairo day trip by plane</li>
+                        <li>Cairo two days private</li>
+                        <li>Cairo day tour à la carte (exclusive)</li>
+                        <li>Cairo Pyramids of Giza, Saqqara and Dahshur Exclusive</li>
+                        <li>Dendera excursion half day</li>
+                        <li>Dendera & Abydos day tour private</li>
+                        <li>Aswan & Abu Simbel Two days private</li>
+                        <li>Monasteries of St. Antonios & St. Paul</li>
+                        <li>3 hours quad tour+camel ride</li>
+                        <li>5 hours quad tour + camel ride + dinner</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>[Excursions from El- Quseir]</h5>
+                    <ul>
+                        <li>Private trip to Luxor</li>
+                        <li>Luxor two days private</li>
+                        <li>Private trip to Cairo</li>
+                        <li>Cairo day trip by plane</li>
+                        <li>Cairo two days private</li>
+                        <li>Cairo day tour à la carte (exclusive)</li>
+                        <li>Cairo Pyramids of Giza, Saqqara and Dahshur Exclusive</li>
+                        <li>Dendera excursion half day</li>
+                        <li>Dendera & Abydos day tour private</li>
+                        <li>Aswan & Abu Simbel Two days private</li>
+                        <li>Monasteries of St. Antonios & St. Paul</li>
+                        <li>3 hours quad tour+camel ride</li>
+                        <li>5 hours quad tour + camel ride + dinner</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>[Safaga Port | Shore Excursions from Safaga]</h5>
+                    <ul>
+                        <li>Private trip to Luxor</li>
+                        <li>Luxor 2 days excursion</li>
+                        <li>Dendera Abydos Excursion</li>
+                        <li>Sharm Elnaga Snorkeling</li>
+                        <li>Utopia Island Snorkeling</li>
+                        <li>Sindbad Submarine</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Special Feutres -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <div class="special-features text-center">
+                        <h2>Our Special Features</h2>
+                        <p class="w-50 m-auto mb-2">Holidays are probably the most valuable time of the year for
+                            everyone.
+                            That's why we
+                            attach great
+                            importance to providing you with an interesting and relaxing time.</p>
+                        <a href="About.html" class="btn btn-light btn-primary">Who we are</a>
                     </div>
                 </div>
-                <!-- Submit error message-->
-                <!---->
-                <!-- This is what your users will see when there is-->
-                <!-- an error submitting the form-->
-                <div class="d-none" id="submitErrorMessage">
-                    <div class="text-center text-danger mb-3">Error sending message!</div>
+                <div class="col-md-12">
+                    <div class="feature-item w-100">
+                        <i class="feature-icon fas fa-flag"></i>
+                        <h3>Individual Excursions Throughout Egypt</h3>
+                        <p>We not only visit the most interesting sights, but also show you things off the beaten track.
+                        </p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="feature-icon fas fa-euro-sign"></i>
+                        <h3>Fair Prices / No Extra Costs</h3>
+                        <p>We offer high quality and personal service at affordable prices.</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="feature-icon fas fa-camera"></i>
+                        <h3>Time for You</h3>
+                        <p>Thanks to our small group size, you will have enough time during the excursions to see
+                            everything
+                            at your leisure.</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="feature-icon fas fa-calendar-alt"></i>
+                        <h3>We Adapt to You</h3>
+                        <p>Most of our excursions can be customized to suit your schedule and needs.</p>
+                    </div>
                 </div>
-                <!-- Submit Button-->
-                <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled"
-                        id="submitButton" type="submit">Send Message</button></div>
-            </form>
+            </div>
         </div>
-    </section>
-    <!-- Footer-->
-    <!-- Footer-->
-    <footer class="footer py-4">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-4 text-lg-start">Copyright &copy; ALBATROS TRAVEL 2024</div>
-                <div class="col-lg-4 my-3 my-lg-0">
-                    <a class="btn btn-dark btn-social mx-2" href="https://web.facebook.com/" aria-label="Facebook"><i
-                            class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/" aria-label="instagram"><i
-                            class="fa-brands fa-instagram"></i></a>
+
+        <!-- Contact-->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Contact Us</h2>
+                    <h3 class="section-subheading text-muted">We are at your service. Do not hesitate to contact us</h3>
                 </div>
-                <!-- <div class="col-lg-4 text-lg-end">
+
+                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                    <div class="row align-items-stretch mb-5">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <!-- Name input-->
+                                <input class="form-control" id="name" type="text" placeholder="Your Name *"
+                                    data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                            </div>
+                            <div class="form-group">
+                                <!-- Email address input-->
+                                <input class="form-control" id="email" type="email" placeholder="Your Email *"
+                                    data-sb-validations="required,email" />
+                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.
+                                </div>
+                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                            </div>
+                            <div class="form-group mb-md-0">
+                                <!-- Phone number input-->
+                                <input class="form-control" id="phone" type="tel" placeholder="Your Phone *"
+                                    data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is
+                                    required.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group form-group-textarea mb-md-0">
+                                <!-- Message input-->
+                                <textarea class="form-control" id="message" placeholder="Your Message *"
+                                    data-sb-validations="required"></textarea>
+                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Submit success message-->
+                    <!---->
+                    <!-- This is what your users will see when the form-->
+                    <!-- has successfully submitted-->
+                    <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center text-white mb-3">
+                            <div class="fw-bolder">Form submission successful!</div>
+                            To activate this form, sign up at
+                            <br />
+
+                            <a aria-label="Chat on WhatsApp" href="https://wa.me/201152074894"> <img
+                                    alt="Chat on WhatsApp" src="assets/img/portfolio/WhatsAppButtonGreenLarge.png" />
+                            </a>
+
+                            <!-- <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>-->
+                        </div>
+                    </div>
+                    <!-- Submit error message-->
+                    <!---->
+                    <!-- This is what your users will see when there is-->
+                    <!-- an error submitting the form-->
+                    <div class="d-none" id="submitErrorMessage">
+                        <div class="text-center text-danger mb-3">Error sending message!</div>
+                    </div>
+                    <!-- Submit Button-->
+                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled"
+                            id="submitButton" type="submit">Send Message</button></div>
+                </form>
+            </div>
+        </section>
+
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-start">Copyright &copy; ALBATROS TRAVEL 2024</div>
+                    <div class="col-lg-4 my-3 my-lg-0">
+                        <a class="btn btn-dark btn-social mx-2" href="https://web.facebook.com/"
+                            aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/"
+                            aria-label="instagram"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <!-- <div class="col-lg-4 text-lg-end">
                 <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
                 <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
             </div>-->
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
+
     <!-- Core JS-->
     <script src="js/scripts.js"></script>
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>

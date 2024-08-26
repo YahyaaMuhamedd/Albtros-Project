@@ -99,6 +99,16 @@ html {
   transform: translateY(-70%);
 }
 
+.header-font {
+  h3 {
+    font-size: 4rem;
+  }
+
+  p {
+    font-size: 3rem;
+  }
+}
+
 @media only screen and (max-width: 500px) {
   .h90vh-rv {
     height: 50vh !important;
@@ -107,6 +117,16 @@ html {
 
   .translate {
     transform: translateY(0);
+  }
+
+  .header-font {
+    h3 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
   }
 }
 

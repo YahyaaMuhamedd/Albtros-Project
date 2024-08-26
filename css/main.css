@@ -86,9 +86,6 @@
   -webkit-box-sizing: border-box;
 }
 
-img {
-  object-fit: cover;
-}
 
 html {
   scroll-padding-top: 4.5rem;

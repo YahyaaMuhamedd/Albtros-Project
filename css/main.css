@@ -99,6 +99,7 @@ html {
   .h90vh-rv {
     height: 50vh !important;
     width: 100% !important;
+    object-fit: cover;
   }
 }
 

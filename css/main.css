@@ -95,6 +95,13 @@ html {
   height: 90vh;
 }
 
+@media only screen and (max-width: 500px) {
+  .h90vh-rv {
+    height: 50vh !important;
+    width: 100% !important;
+  }
+}
+
 .main-bg-color {
   background: rgba(255, 200, 0, 0.9);
 }
@@ -289,7 +296,7 @@ header.masthead {
   height: 90vh;
 }
 
-header.masthead .masthead-subheading {
+/* header.masthead .masthead-subheading {
   font-weight: 700;
 
   h1 {
@@ -301,9 +308,9 @@ header.masthead .masthead-subheading {
     color: #000;
     font-size: 30px;
   }
-}
+} */
 
-header.masthead .masthead-heading {
+/* header.masthead .masthead-heading {
   font-size: 1.25rem;
   font-weight: 700;
 
@@ -326,7 +333,7 @@ header.masthead .masthead-heading {
       border-color: var(--bs-btn-hover-border-color);
     }
   }
-}
+} */
 
 /* 
 @media (min-width: 768px) {

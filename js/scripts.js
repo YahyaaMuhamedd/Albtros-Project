@@ -901,7 +901,7 @@ function closePopup() {
     popupbg.style.display = "none"
 }
 
-// Show the popup every 5 minutes (300000 milliseconds)
-setInterval(showPopup, 300000);
+// Show the popup every 5 minutes ( milliseconds)
+setInterval(showPopup, 120000);
 
 document.getElementById('close-popup').addEventListener('click', closePopup); 

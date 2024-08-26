@@ -109,6 +109,12 @@ html {
   }
 }
 
+@media only screen and (max-width: 992px) {
+  .img-rv {
+    width: 100% !important;
+  }
+}
+
 @media only screen and (max-width: 750px) {
   .translate {
     transform: translateY(0%);

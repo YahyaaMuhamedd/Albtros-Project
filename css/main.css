@@ -111,7 +111,7 @@ html {
 
 @media only screen and (max-width: 750px) {
   .translate {
-    transform: translateY(-30%);
+    transform: translateY(0%);
   }
 
   .header-font {
@@ -124,13 +124,13 @@ html {
     }
   }
 
-}
-
-@media only screen and (max-width: 500px) {
   .h90vh-rv {
     height: 50vh !important;
     width: 100% !important;
   }
+}
+
+@media only screen and (max-width: 500px) {
 
   .translate {
     transform: translateY(0);

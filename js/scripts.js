@@ -886,3 +886,22 @@ document.getElementById('english-btn').addEventListener('click', () => {
 document.getElementById('russian-btn').addEventListener('click', () => {
     document.getElementById('content').innerHTML = russiancontent;
 })
+
+function showPopup() {
+    const popup = document.getElementById('help-popup')
+    const popupbg = document.getElementById('pop-up-bg')
+    popupbg.style.display = "block"
+    popup.style.display = 'block'
+}
+
+function closePopup() {
+    const popup = document.getElementById('help-popup')
+    popup.style.display = 'none'
+    const popupbg = document.getElementById('pop-up-bg')
+    popupbg.style.display = "none"
+}
+
+// Show the popup every 5 minutes (300000 milliseconds)
+setInterval(showPopup, 3000);
+
+document.getElementById('close-popup').addEventListener('click', closePopup); 

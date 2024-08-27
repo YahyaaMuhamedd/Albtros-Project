@@ -25,32 +25,30 @@
 </head>
 
 <body id="page-top">
-    <!-- Popup Container Help  -->
     <div class="pop-up-bg" id="pop-up-bg">
 
         <div id="help-popup" class="popup">
             <div class="popup-content d-flex flex-column gap-3">
                 <span id="close-popup" class="close-button fs-3">&times;</span>
-                <p>If you have not found what you are looking for,
-                    please do not hesitate to write to us
-                    and we will help you as soon as possible!</p>
-                <button class="btn border-black btn-book w-100"><a href="https://wa.me/201552378066"
-                        class="text-decoration-none ">Send WhatsApp</a></button>
+                <p data-translate="help-text">If you have not found what you are looking for, please do not hesitate to
+                    write to us and we will help you as soon as possible!</p>
+                <button class="btn border-black btn-book w-100" data-translate="send-whatsapp-btn"><a
+                        href="https://wa.me/201552378066" class="text-decoration-none">Send WhatsApp</a></button>
             </div>
         </div>
     </div>
     <!-- End -->
-    <div class="position-fixed " style="bottom: 20px; right: 20px; z-index: 10000;">
+    <div class="position-fixed" style="bottom: 20px; right: 20px; z-index: 10000;">
         <a class="navbar-brand text-center text-white" href="https://wa.me/201552378066">
             <img src="assets/img/whatsapp.png" alt="WhatsApp" width="60px" height="60px">
         </a>
     </div>
     <!-- Navigation-->
-    <div class="call py-1 d-flex flex-column bg-dark ">
-        <a class="navbar-brand text-center text-white" href="https://wa.me/201552378066">
+    <div class="call py-1 d-flex flex-column bg-dark">
+        <a class="navbar-brand text-center text-white" href="https://wa.me/201552378066"
+            data-translate="call-or-whatsapp">
             <img src="assets/img/whatsapp.png" alt="WhatsApp" width="25px" height="25px">
-            Call Or WhatsApp :
-            +201552378066
+            Call Or WhatsApp: +201552378066
         </a>
     </div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="mainNav">
@@ -63,46 +61,50 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                    <li class="nav-item"><a class="nav-link text-warning" href="index.html">
+                    <li class="nav-item"><a class="nav-link text-warning" href="index.html" data-translate="home">
                             <i class="fa-solid fa-house"></i> Home
                         </a></li>
-                    <li class="nav-item dropdown ">
-                        <a class="nav-link dropdown-toggle text-warning " id="trips" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-warning" id="trips" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" data-translate="trips">
                             Trips
                         </a>
                         <ul class="dropdown-menu">
-                            <li class="nav-link"><a class="dropdown-item" href="trips/boattrips.html">Boat Trips</a>
-                            </li>
-                            <li class="nav-link"><a class="dropdown-item" href="trips/safari.html">Safari</a></li>
-                            <li class="nav-link"><a class="dropdown-item" href="trips/diving.html">Diving</a></li>
+                            <li class="nav-link"><a class="dropdown-item" href="trips/boattrips.html"
+                                    data-translate="boat-trips">Boat Trips</a></li>
+                            <li class="nav-link"><a class="dropdown-item" href="trips/safari.html"
+                                    data-translate="safari">Safari</a></li>
+                            <li class="nav-link"><a class="dropdown-item" href="trips/diving.html"
+                                    data-translate="diving">Diving</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link text-warning" href="Hotels.html">Hotels</a></li>
-                    <li class="nav-item dropdown ">
+                    <li class="nav-item"><a class="nav-link text-warning" href="Hotels.html"
+                            data-translate="hotels">Hotels</a></li>
+                    <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-warning" role="button" href="citytours.html"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                            data-bs-toggle="dropdown" aria-expanded="false" data-translate="city-tours">
                             City Tours</a>
                         <ul class="dropdown-menu">
-                            <li class="nav-link"><a class="dropdown-item" href="CityTours/hurghada.html">hurghada</a>
-                            </li>
-                            <li class="nav-link"><a class="dropdown-item" href="CityTours/Gouna.html">El Gouna</a></li>
+                            <li class="nav-link"><a class="dropdown-item" href="CityTours/hurghada.html"
+                                    data-translate="hurghada">Hurghada</a></li>
+                            <li class="nav-link"><a class="dropdown-item" href="CityTours/Gouna.html"
+                                    data-translate="el-gouna">El Gouna</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link text-warning" href="travels.html">Travels</a></li>
-                    <li class="nav-item"><a class="nav-link text-warning" href="About.html">About</a></li>
-                    <li class="nav-item dropdown ">
-                        <a class="nav-link dropdown-toggle text-warning" href="#" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                    <li class="nav-item"><a class="nav-link text-warning" href="travels.html"
+                            data-translate="travels">Travels</a></li>
+                    <li class="nav-item"><a class="nav-link text-warning" href="About.html"
+                            data-translate="about">About</a></li>
+                    <li class="nav-item dropdown">
+                        <!-- <a class="nav-link dropdown-toggle text-warning" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" data-translate="language">
                             Language
-                        </a>
+                        </a> -->
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#" onclick="changeLanguage('en')"
-                                    id="english-btn">English</a></li>
-                            <!-- <li><a class="dropdown-item" href="#" onclick="changeLanguage('ar')"
-                                    id="arabic-btn">العربية</a></li> -->
-                            <li><a class="dropdown-item" href="#" onclick="changeLanguage('ru')"
-                                    id="russian-btn">Русский</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="changeLanguage('en')" id="english-btn"
+                                    data-translate="english">English</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="changeLanguage('ru')" id="russian-btn"
+                                    data-translate="russian">Русский</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -111,7 +113,10 @@
     </nav>
 
     <!-- Masthead-->
-    <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel">
+
+    <!-- Services-->
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
@@ -125,1063 +130,1067 @@
             <div class="carousel-item active position-relative">
                 <img src="./assets/img/header (3).jpeg" class="d-block w-100 h90vh-rv h90vh" alt="Traveling Pyramids">
                 <div class="carousel-caption d-md-block text-center translate header-font">
-                    <h3 class="  fw-bold">ALBATROS RED SEA</h3>
-                    <p class=" fw-bold">The Best In The Red Sea</p>
+                    <h3 class="fw-bold" data-translate="carousel-title">ALBATROS RED SEA</h3>
+                    <p class="fw-bold" data-translate="carousel-subtitle">The Best In The Red Sea</p>
                 </div>
             </div>
             <div class="carousel-item position-relative">
                 <img src="./assets/img/header (2).jpeg" class="d-block w-100 h90vh-rv h90vh" alt="Traveling Pyramids">
                 <div class="carousel-caption text-center translate header-font">
-                    <h3 class="  fw-bold">ALBATROS RED SEA</h3>
-                    <p class=" fw-bold">The Best In The Red Sea</p>
+                    <h3 class="fw-bold" data-translate="carousel-title">ALBATROS RED SEA</h3>
+                    <p class="fw-bold" data-translate="carousel-subtitle">The Best In The Red Sea</p>
                 </div>
             </div>
             <div class="carousel-item position-relative">
                 <img src="./assets/img/header (1).jpeg" class="d-block w-100 h90vh-rv h90vh" alt="Traveling Pyramids">
                 <div class="carousel-caption text-center translate header-font">
-                    <h3 class="  fw-bold">ALBATROS RED SEA</h3>
-                    <p class="  fw-bold">The Best In The Red Sea</p>
+                    <h3 class="fw-bold" data-translate="carousel-title">ALBATROS RED SEA</h3>
+                    <p class="fw-bold" data-translate="carousel-subtitle">The Best In The Red Sea</p>
                 </div>
             </div>
 
         </div>
     </div>
-
-    <!-- Services-->
-
-
+    <div class="container gap-4">
+        <h1 class="fs-1 text-center main-color fw-bold mb-5" data-translate="welcome">Welcome to Albatros Travel</h1>
+        <div class="row">
+            <div class="col-md-6 m-auto text-center fs-5 mb-5">
+                <p data-translate="intro-text">Now book your Egypt excursions online. We offer a wide range of tours &
+                    activities in Egypt and tickets for the most popular attractions. We are in Egypt and specifically
+                    for Egypt holidays, Egypt excursions & day trips and tours throughout Egypt.</p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-2 col-sm-6 col-xs-6">
+                <div class="feature">
+                    <i class="fas fa-times-circle"></i>
+                    <p class="text-black" data-translate="free-cancellation">Free cancellation</p>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-6">
+                <div class="feature">
+                    <i class="fas fa-coffee"></i>
+                    <p class="text-black" data-translate="no-coffee-trip">No coffee trip</p>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-6">
+                <div class="feature">
+                    <i class="fas fa-star"></i>
+                    <p class="text-black">High quality of service</p>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-6">
+                <div class="feature">
+                    <i class="fas fa-tag"></i>
+                    <p class="text-black">Best price guarantee</p>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-6">
+                <div class="feature">
+                    <i class="fas fa-shield-alt"></i>
+                    <p class="text-black">Insurance included</p>
+                </div>
+            </div>
+        </div>
     </div>
-    <div id="content">
-
-        <div class="container gap-4">
-            <h1 class="fs-1 text-center main-color fw-bold mb-5">Welcome to Albatros Travel</h1>
-            <div class="row ">
-                <div class="col-md-6 m-auto text-center fs-5 mb-5">
-                    <p>Now book your Egypt excursions online . We offer a wide range of tours & activities in Egypt and
-                        tickets for the most popular attractions. We are in Egypt and specifically for Egypt holidays ,
-                        Egypt excursions & day trips and tours throughout Egypt.</p>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-md-2 col-sm-6 col-xs-6">
-                    <div class="feature">
-                        <i class="fas fa-times-circle"></i>
-                        <p class="text-black">Free cancellation</p>
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-6 col-xs-6">
-                    <div class="feature">
-                        <i class="fas fa-coffee"></i>
-                        <p class="text-black">No coffee trip</p>
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-6 col-xs-6">
-                    <div class="feature">
-                        <i class="fas fa-star"></i>
-                        <p class="text-black">High quality of service</p>
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-6 col-xs-6">
-                    <div class="feature">
-                        <i class="fas fa-tag"></i>
-                        <p class="text-black">Best price guarantee</p>
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-6 col-xs-6">
-                    <div class="feature">
-                        <i class="fas fa-shield-alt"></i>
-                        <p class="text-black">Insurance included</p>
-                    </div>
-                </div>
-            </div>
-        </div>
 
 
 
-        <!-- Card Plls -->
-        <div class="cards my-5">
-            <div class="container">
-                <div class="row d-flex m-auto ">
-                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                        <a href="./trips/boattrips.html">
-                            <div class="card w-100 rounded-pill">
-                                <div class="img-info position-relative overflow-hidden rounded-pill">
-                                    <img src="./assets/img/Boattrip.jpeg" class="card-img-top" alt="...">
-                                    <div
-                                        class="caption text-center text-white position-absolute text-center d-flex flex-column justify-content-center align-items-center w-100 h-100">
-                                        <h1>
-                                            <a href="./trips/boattrips.html" class="text-decoration-none text-white"
-                                                style="font-size: 52px;">Boat
-                                                Trips</a>
-                                        </h1>
 
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                        <a href="./trips/safari.html">
-                            <div class="card w-100 rounded-pill">
-                                <div class="img-info position-relative overflow-hidden rounded-pill">
-                                    <img src="./assets/trips img/Desert Safari.jpg" class="card-img-top"
-                                        alt="Desert Safari">
-                                    <div
-                                        class="caption text-center text-white position-absolute text-center d-flex flex-column justify-content-center align-items-center w-100 h-100">
-                                        <h1>
-                                            <a href="./trips/safari.html" class="text-decoration-none text-white"
-                                                style="font-size: 52px;">
-                                                Safari
-                                            </a>
-                                        </h1>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
+    <!-- TRANSLATED .............................. -->
 
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                        <a href="./trips/diving.html">
-                            <div class="card w-100 rounded-pill">
-                                <div class="img-info position-relative overflow-hidden rounded-pill">
-                                    <img src="./assets/trips img/Diving.jpeg" class="card-img-top" alt="Desert Safari">
-                                    <div
-                                        class="caption text-center text-white position-absolute text-center d-flex flex-column justify-content-center align-items-center w-100 h-100">
-                                        <h1 class="fs-1 m-auto">
-                                            <a href="./trips/diving.html" class="text-decoration-none text-white "
-                                                style="font-size: 52px;">
-                                                Diving
-                                            </a>
-                                        </h1>
 
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                        <a href="./travels.html">
-                            <div class="card w-100 rounded-pill">
-                                <div class="img-info position-relative overflow-hidden rounded-pill">
-                                    <img src="./assets/trips img/Cairo.png" class="card-img-top" alt="Desert Safari">
-                                    <div
-                                        class="caption text-center text-white position-absolute text-center d-flex flex-column justify-content-center align-items-center w-100 h-100">
-                                        <h1 class="fs-1 m-auto">
-                                            <a href="./travels.html" class="text-decoration-none text-white "
-                                                style="font-size: 52px;">
-                                                Cairo
-                                            </a>
-                                        </h1>
 
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                        <a href="./travels.html">
-                            <div class="card w-100 rounded-pill">
-                                <div class="img-info position-relative overflow-hidden rounded-pill">
-                                    <img src="./assets/trips img/Luxor.png" class="card-img-top" alt="Desert Safari">
-                                    <div
-                                        class="caption text-center text-white position-absolute text-center d-flex flex-column justify-content-center align-items-center w-100 h-100">
-                                        <h1 class="fs-1 m-auto">
-                                            <a href="./travels.html" class="text-decoration-none text-white "
-                                                style="font-size: 52px;">
-                                                Luxor
-                                            </a>
-                                        </h1>
 
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <div class="container  h-100">
-            <div class=" d-flex gap-4 w-100 flex-wrap justify-content-between h-100">
-                <ul>
-                    <h5>[Excursions from Hurghada, El Gouna, Makady]</h5>
-                    <li>Private trip to Luxor</li>
-                    <li>Luxor two days private</li>
-                    <li>Private trip to Cairo</li>
-                    <li>Cairo day trip by plane</li>
-                    <li>Cairo two days private</li>
-                    <li>Cairo day tour à la carte (exclusive)</li>
-                    <li>Cairo Pyramids of Giza, Saqqara and Dahshur Exclusive</li>
-                    <li>Dendera excursion half day</li>
-                    <li>Dendera & Abydos day tour private</li>
-                    <li>Hurghada city tour</li>
-                    <li>El-Gouna city tour</li>
-                    <li>Aswan & Abu Simbel Two days private</li>
-                    <li>Monasteries of St. Antonios & St. Paul</li>
-                    <li>3 hours quad tour + camel ride</li>
-                    <li>5 hours quad tour + camel ride + dinner</li>
-                </ul>
-                <img src="./assets/CityTours img/Hurghada1.webp" alt="Hurghada Trip" class="img-rv"
-                    style="width: 300px; object-fit: cover; border-radius: 15px; box-shadow: 0px 0px 20px black;">
-            </div>
-        </div>
-        <div class="container my-5">
-            <h1 class="text-center">Egypt Day Tours & Hurghada Excursions</h1>
-            <p class="text-center">From visiting the monasteries to a city tour in Hurghada; we offer a lot of
-                variety and fun for the whole family.</p>
-        </div>
-        <!-- Cards -->
-        <div class="cards my-5 container">
-            <div class="row d-flex m-auto">
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                    <div class="card w-100 h-100 ">
-                        <div class="img-info position-relative overflow-hidden">
-                            <img src="assets/trips img/Luxor.png" class="card-img-top" alt="...">
-                            <div
-                                class="caption text-center text-white position-absolute text-center d-flex flex-column justify-content-center align-items-center w-100 h-100">
-                                <h1>Luxor</h1>
-                                <p>Best Price For Person</p>
-                                <span class="bg-white w-100 mb-3"></span>
-                                <h3>60.00 EUR</h3>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold">Luxor Travel</h5>
-                            <p class="card-text ms-4 fst-italic">
-                                Your Favourite Trip!
-                            </p>
-                        </div>
-
-                        <div class="card-body d-flex justify-content-center align-items-center w-100">
-                            <a href="./travels.html" class="text-decoration-none w-100 btn border-black btn-book w-100">
-
-                                More Details
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                    <div class="card w-100 h-100">
-                        <div class="img-info position-relative overflow-hidden">
-                            <img src="assets/trips img/Cairo.png" class="card-img-top" alt="...">
-                            <div
-                                class="caption text-center text-white position-absolute text-center d-flex flex-column justify-content-center align-items-center w-100 h-100">
-                                <h1>Cairo</h1>
-                                <p>Best Price For Person</p>
-                                <span class="bg-white w-100 mb-3"></span>
-                                <h3>70.00 EUR</h3>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold">Cairo Travel</h5>
-                            <p class="card-text ms-4 fst-italic">
-                                Your Favourite Trip!
-                            </p>
-                        </div>
-
-                        <div class="card-body d-flex justify-content-center align-items-center w-100">
-                            <a href="./travels.html" class="text-decoration-none w-100 btn border-black btn-book w-100">
-
-                                More Details
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                    <div class="card w-100 h-100 ">
-                        <div class="img-info position-relative overflow-hidden">
-                            <img src="assets/trips img/Hurghada.jpg" class="card-img-top" alt="...">
-                            <div
-                                class="caption text-center text-white position-absolute text-center d-flex flex-column justify-content-center align-items-center w-100 h-100">
-                                <h1>Hurghada</h1>
-                                <p>Best Price For Person</p>
-                                <span class="bg-white w-100 mb-3"></span>
-                                <h3>20.00 EUR</h3>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold">Hurghada Travel</h5>
-                            <p class="card-text ms-4 fst-italic">
-                                Your Favourite Trip!
-                            </p>
-                        </div>
-
-                        <div class="card-body d-flex justify-content-center align-items-center w-100">
-                            <a href="./travels.html" class="text-decoration-none w-100 btn border-black btn-book w-100">
-
-                                More Details
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="cards my-5 container">
-            <div class=" row d-flex m-auto">
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                    <div class="card w-100">
-                        <div class="img-info position-relative overflow-hidden">
-                            <img src="./assets/trips img/paradiseisland.jpg" class="card-img-top" alt="...">
-                            <div
-                                class="caption text-center text-white position-absolute text-center d-flex flex-column justify-content-center align-items-center w-100 h-100">
-                                <h1>PARADISE ISLAND</h1>
-                                <p>Best Price For Person</p>
-                                <span class="bg-white w-100 mb-3"></span>
-                                <h3>$25.00</h3>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold">Paradise Island</h5>
-                            <p class="card-text ms-4 fst-italic">
-                                Your Favourite Trip!
-                            </p>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item text-capitalize">• duration 7 - 8 hours</li>
-                            <li class="list-group-item text-capitalize">• snorkelling + equipments</li>
-                            <li class="list-group-item text-capitalize">• soft & hot drinks, and bufet lunch on boat
-                            </li>
-                            <li class="list-group-item text-capitalize">• water sports (banana and sofa bed)</li>
-                        </ul>
-                        <div class="card-body d-flex justify-content-center  gap-4">
-                            <button class="btn border-black btn-book w-100"><a href="https://wa.me/201552378066"
-                                    class="text-decoration-none ">Book Now</a></button>
-                            <button class="btn border-black btn-book w-100 moreDetailsBtn" data-modal="modal1"> More
-                                Details</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- Desert Safari -->
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                    <div class="card w-100">
-                        <div class="img-info position-relative overflow-hidden">
-                            <img src="./assets/trips img/Desert Safari.jpg" class="card-img-top" alt="...">
-                            <div
-                                class="caption text-center text-white position-absolute text-center d-flex flex-column justify-content-center align-items-center w-100 h-100">
-                                <h1>Desert Safari</h1>
-                                <p>Best Price For Person</p>
-                                <span class="bg-white w-100 mb-3"></span>
-                                <h3>20.00 EUR</h3>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold">Desert Safari</h5>
-                            <p class="card-text ms-4 fst-italic">
-                                Your Favourite Trip!
-                            </p>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item text-capitalize">• duration 3 hours or safari afternoon
-                                (+ 5
-                                €)</li>
-                            <li class="list-group-item text-capitalize">• experience an exciting Jeep, ATV Quad, and
-                                Buggy </li>
-                            <li class="list-group-item text-capitalize">• visit a Bedouin village in the desert
-                            </li>
-                            <li class="list-group-item text-capitalize">• camels ride
-                            </li>
-                        </ul>
-                        <div class="card-body d-flex justify-content-center gap-4">
-                            <button class="btn border-black btn-book w-100"><a href="https://wa.me/201552378066"
-                                    class="text-decoration-none ">Book
-                                    Now</a></button>
-                            <button class="btn border-black btn-book w-100" data-modal="modal2"> More
-                                Details</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- Super Desert Safari -->
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                    <div class="card w-100">
-                        <div class="img-info position-relative overflow-hidden">
-                            <img src="./assets/trips img/Desert Safari.jpg" class="card-img-top" alt="...">
-                            <div
-                                class="caption text-center text-white position-absolute text-center d-flex flex-column justify-content-center align-items-center w-100 h-100">
-                                <h1>Super Desert Safari</h1>
-                                <p>Best Price For Person</p>
-                                <span class="bg-white w-100 mb-3"></span>
-                                <h3>30.00 EUR</h3>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold">Super Desert Safari</h5>
-                            <p class="card-text ms-4 fst-italic">
-                                Your Favourite Trip!
-                            </p>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item text-capitalize">• duration 5 hours or safari afternoon
-                                (+ 5
-                                €)</li>
-                            <li class="list-group-item text-capitalize">• experience an exciting Jeep, ATV Quad, and
-                                Buggy </li>
-                            <li class="list-group-item text-capitalize">• visit a Bedouin village in the desert
-                            </li>
-                            <li class="list-group-item text-capitalize">• camels ride
-                            </li>
-                        </ul>
-                        <div class="card-body d-flex justify-content-center gap-4">
-                            <button class="btn border-black btn-book w-100"><a href="https://wa.me/201552378066"
-                                    class="text-decoration-none ">Book
-                                    Now</a></button>
-                            <button class="btn border-black btn-book w-100" data-modal="modal2"> More
-                                Details</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- Private Desert Safari -->
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                    <div class="card w-100">
-                        <div class="img-info position-relative overflow-hidden">
-                            <img src="./assets/trips img/Desert Safari.jpg" class="card-img-top" alt="...">
-                            <div
-                                class="caption text-center text-white position-absolute text-center d-flex flex-column justify-content-center align-items-center w-100 h-100">
-                                <h1>Private Desert Safari</h1>
-                                <p>Best Price For Person</p>
-                                <span class="bg-white w-100 mb-3"></span>
-                                <h3>40.00 EUR</h3>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold">Private Desert Safari</h5>
-                            <p class="card-text ms-4 fst-italic">
-                                Your Favourite Trip!
-                            </p>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item text-capitalize">• duration 3 hours or safari afternoon
-                                (+ 5
-                                €)</li>
-                            <li class="list-group-item text-capitalize">• experience an exciting Jeep, ATV Quad, and
-                                Buggy </li>
-                            <li class="list-group-item text-capitalize">• visit a Bedouin village in the desert
-                            </li>
-                            <li class="list-group-item text-capitalize">• camels ride
-                            </li>
-                        </ul>
-                        <div class="card-body d-flex justify-content-center gap-4">
-                            <button class="btn border-black btn-book w-100"><a href="https://wa.me/201552378066"
-                                    class="text-decoration-none ">Book
-                                    Now</a></button>
-                            <button class="btn border-black btn-book w-100" data-modal="modal2"> More
-                                Details</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                    <div class="card w-100">
-                        <div class="img-info position-relative overflow-hidden">
-                            <img src="./assets/CityTours img/Hurghada3.webp" class="card-img-top" alt="...">
-                            <div
-                                class="caption text-center text-white position-absolute text-center d-flex flex-column justify-content-center align-items-center w-100 h-100">
-                                <h1>Hurghada</h1>
-                                <p>Best Price For Person</p>
-                                <span class="bg-white w-100 mb-3"></span>
-                                <h3>$513</h3>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold text-capitalize">Hurghada Tour</h5>
-                            <p class="card-text ms-4 fst-italic">
-                                Hurghada: Morning or sunset Sights Guided Tour with Shopping
-                            </p>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item text-capitalize">• 3 hours</li>
-                            <li class="list-group-item text-capitalize">• small group
-                            </li>
-                            <li class="list-group-item text-capitalize">• Pick Up availabe
-                            </li>
-                            <li class="list-group-item"></li>
-                        </ul>
-                        <div class="card-body d-flex justify-content-center gap-4">
-                            <button class="btn border-black btn-book w-100"><a href="https://wa.me/201552378066"
-                                    class="text-decoration-none ">Book
-                                    Now</a></button>
-                            <button class="btn border-black btn-book w-100" data-modal="modal3"> More
-                                Details</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <h1 class="text-center fs-1 mt-3">Horse Riding</h1>
-            <div class="row d-flex m-auto mt-5">
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                    <div class="card w-100">
-                        <div class="img-info position-relative overflow-hidden">
-                            <img src="./assets/Horse-riding-4.jpg" class="card-img-top" alt="...">
-                            <div
-                                class="caption text-center text-white position-absolute text-center d-flex flex-column justify-content-center align-items-center w-100 h-100">
-                                <h1>Horse Riding</h1>
-                                <p>Best Price For Person</p>
-                                <span class="bg-white w-100 mb-3"></span>
-                                <h3>20 EUR</h3>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold text-capitalize">Horse Riding Hurghada</h5>
-                            <p class="card-text ms-4 fst-italic">
-                                Your Favourite Ride
-                            </p>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item text-capitalize">• 2-3 hours</li>
-                            <li class="list-group-item text-capitalize">• Every Day
-                            </li>
-                            <li class="list-group-item text-capitalize">• Hotel pickup offered
-                            </li>
-                            <li class="list-group-item">• Native Speaker</li>
-                        </ul>
-                        <div class="card-body d-flex justify-content-center gap-4">
-                            <button class="btn border-black btn-book w-100"><a href="https://wa.me/201552378066"
-                                    class="text-decoration-none ">Book
-                                    Now</a></button>
-                            <button class="btn border-black btn-book w-100" data-modal="modalHorse1"> More
-                                Details</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                    <div class="card w-100">
-                        <div class="img-info position-relative overflow-hidden">
-                            <img src="./assets/trips img/egypt-camel-ride.webp" class="card-img-top" alt="...">
-                            <div
-                                class="caption text-center text-white position-absolute text-center d-flex flex-column justify-content-center align-items-center w-100 h-100">
-                                <h1>Camel Riding</h1>
-                                <p>Best Price For Person</p>
-                                <span class="bg-white w-100 mb-3"></span>
-                                <h3>20 EUR</h3>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold text-capitalize">Camel Riding</h5>
-                            <p class="card-text ms-4 fst-italic">
-                                Your Favourite Ride
-                            </p>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item text-capitalize">• 2-3 hours</li>
-                            <li class="list-group-item text-capitalize">• Every Day
-                            </li>
-                            <li class="list-group-item text-capitalize">• Hotel pickup offered
-                            </li>
-                            <li class="list-group-item">• Native Speaker</li>
-                        </ul>
-                        <div class="card-body d-flex justify-content-center gap-4">
-                            <button class="btn border-black btn-book w-100"><a href="https://wa.me/201552378066"
-                                    class="text-decoration-none ">Book
-                                    Now</a></button>
-                            <button class="btn border-black btn-book w-100" data-modal="modalHorse2"> More
-                                Details</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Cards -->
-        <!-- MOdal Paradise island -->
-        <div class="modal" id="modal1">
-            <div class="modal-content">
-                <div class="container d-flex justify-content-start">
-                    <span class="close ">&times;</span>
-                </div>
-                <div class="container">
-                    <h2>Paradise Island Snorkeling Day Tour</h2>
-
-                    <p>Enjoy unforgettable swimming on the private beach on Paradise Island and a relaxing boat trip on
-                        the
-                        Red Sea.</p>
-
-                    <p>Paradise Island is a nature reserve in the Red Sea off Hurghada and offers its visitors white
-                        sandy
-                        beaches and colorful pristine coral reefs.</p>
-
-                    <p>Swim and snorkel with an incredible variety of different fish and discover the unique underwater
-                        world.</p>
-
-                    <h3>Program of Paradise Island Snorkeling Day Tour</h3>
-
-                    <ul>
-                        <li>Boat trip with a snorkel stop</li>
-                        <li>Stay on the island</li>
-                        <li>Folklore show</li>
-                    </ul>
-
-                    <h3>Description for Paradise Island Snorkeling Day Tour</h3>
-
-                    <p>We will pick you up from your hotel in a fully air-conditioned vehicle and transfer you to the
-                        port
-                        where your snorkeling excursion begins. You get on board your boat, where you can choose a
-                        comfortable seat on the deck. There is both sun and shade on the deck. After the friendly crew
-                        have
-                        introduced themselves and briefly brief you on safety on board, a fabulous and interesting
-                        journey
-                        through the Red Sea begins for your snorkelling trip.</p>
-
-                    <p>Admire the colorful corals and swim with a variety of exotic fish such as clown fish, butterfly
-                        fish,
-                        grouper, parrotfish and many more. Thanks to the crystal clear water, they are all perfectly
-                        visible. Also watch out for other marine life such as stingrays and turtles.</p>
-
-                    <p>After a snorkeling stop, we will continue to Paradise Island, where we will arrive at around
-                        12:00.
-                        There you will receive lunch (buffet) and have time to relax, swim or snorkel on the white sandy
-                        beach. There will be a folklore show for your entertainment around 14:00 and then you can relax
-                        a
-                        bit before we return by boat to the port at around 15:45. (earlier check-out in winter) where
-                        your
-                        transfer car will be waiting for you to take you back to your hotel.</p>
-                </div>
-            </div>
-        </div>
-        <!-- Modal Safari -->
-        <div id="modal2" class="modal">
-            <div class="modal-content">
-                <div class="container d-flex justify-content-start">
-                    <span class="close ">&times;</span>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h2><i class="fas fa-jeep"></i> Safari by Quad Bike & Camel Ride</h2>
-                            <p>This 3-hour tour is an extremely dusty adventure with absolute fun guaranteed!</p>
-                            <p>The 3 Hour Safari by Quad Bike is a great opportunity to see the desert in all its beauty
-                                and
-                                splendor. The Safari by Quad Bike Tour is for those who want to cross the desert on a
-                                four-wheeled ATV.</p>
-                            <p>During the Safari by Quad Bike & Camel Ride, you can explore the life and traditions of
-                                the
-                                Bedouin village. And also ride a camel and learn interesting facts about their life in
-                                the
-                                desert.</p>
-                            <p>Memories and impressions of the excursion Safari by Quad Bike & Camel Ride will stay with
-                                you
-                                for a long time!</p>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h3>Program of 3 Hours Safari by Quad Bike & Camel Ride</h3>
-                            <table class="table table-striped">
-                                <tr>
-                                    <th>Time</th>
-                                    <th>Program</th>
-                                </tr>
-                                <tr>
-                                    <td>⏰ 7:30</td>
-                                    <td>Pick up from the hotel</td>
-                                </tr>
-                                <tr>
-                                    <td>⏰ 8:00</td>
-                                    <td>Arrival at Safari Station</td>
-                                </tr>
-                                <tr>
-                                    <td>⏰ 11:00</td>
-                                    <td>Departure to the hotel</td>
-                                </tr>
-                                <tr>
-                                    <td>⏰ 11:30</td>
-                                    <td>Back in hotel</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h3>Description for 3 Hours Safari by Quad Bike & Camel Ride tour</h3>
-                            <p>We will pick you up from your hotel at about 07.30 am and bring you to the Quad Bike
-                                training
-                                station. There you will receive instructions on how to drive your Quad Bike correctly
-                                and
-                                safely. And also make some test laps under the supervision of an instructor.</p>
-                            <p>All Quad Bikes have an automatic control system, so in order to ride, you just need to
-                                apply
-                                the gas and the brake. Learning to drive a Quad Bike is not difficult at all, we are
-                                sure
-                                you will succeed!</p>
-                            <p>We drive about 1 hour (approx. 25 km) with Quad Bike until we arrive to the Bedouin
-                                village.
-                            </p>
-                            <p>Friendly Bedouins will meet and greet you in the Bedouin Village. They will be happy to
-                                show
-                                you how they live, tell you about their traditions, life and treat you to Bedouin tea.
-                            </p>
-                            <p>In the same place you will have the opportunity to ride camels and explore the area.
-                                After
-                                that, you have to return on your Quad Bike and drive 25 km back to the Quad Bike
-                                training
-                                station from where we started.</p>
-                            <p>After that, we will bring you back to your hotel.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal3 -->
-        <div id="modal3" class="modal">
-            <div class="modal-content">
-                <div class="container d-flex justify-content-start">
-                    <span class="close ">&times;</span>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h2><i class="fas fa-city"></i> Hurghada Private City Tour</h2>
-                            <p>Would you like to get to know the real, original Hurghada? Would you like to visit the
-                                tourist
-                                attractions of the city? Are you tired of mass tourism and coffee trips? Would you like
-                                to see, be amazed
-                                and really enjoy?</p>
-                            <p>We have put together the right mix for you. Of course you also have the possibility to
-                                design your tour
-                                with us individually! Hurghada city tour with Memnon Reisen is away from mass tourism!
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h3>Program of Hurghada Private City Tour</h3>
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-mosque"></i> Mosque El Mina Masjid</li>
-                                <li><i class="fas fa-church"></i> Coptic Cathedral of Saint Shenouda</li>
-                                <li><i class="fas fa-fish"></i> The fish market</li>
-                                <li><i class="fas fa-vegetable"></i> The vegetable market</li>
-                                <li><i class="fas fa-marina"></i> Hurghada Marina Boulevard</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h3>Description for Hurghada Private City Tour</h3>
-                            <p>AT 14:00. we will pick you up from your hotel in a quality air-conditioned vehicle.</p>
-                            <p>The first stop takes you straight to the highest point in the city. From here a beautiful
-                                panoramic view
-                                of the entire city of Hurghada and the Red Sea opens up.</p>
-                            <p>Then we go to the city pier. Let yourself be enchanted by the beautiful yachts and the
-                                harbor atmosphere
-                                as you sail along a leisurely stroll. We continue our tour to the fish market. Next stop
-                                is the oldest
-                                church in the city, the Coptic Church and the largest seaside mosque.</p>
-                            <p>From there we will drive to the vegetable and fruit market in the old town. We then drive
-                                to a local cafe
-                                to enjoy mint tea or Egyptian coffee.</p>
-                            <p>If you have a special request, you can discuss it with our guide. We will stop at all
-                                interesting places.
-                            </p>
-                            <p>Around 19:00. we will take you back to your hotel.</p>
-                            <p>Our tour of Hurghada will be absolutely thrilling and you will get many new experiences
-                                from Hurghada.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h3>Included Services</h3>
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-car"></i> Pick-up from the lobby of your hotel</li>
-                                <li><i class="fas fa-comment"></i> English speaking guide</li>
-                                <li><i class="fas fa-phone"></i> Customer support is available 24/7</li>
-                                <li><i class="fas fa-shield-alt"></i> Insurance included</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h3>Prices</h3>
-                            <table class="table table-striped">
-                                <tr>
-                                    <th>Number of people</th>
-                                    <th>Vehicle</th>
-                                    <th>Price per Adult</th>
-                                </tr>
-                                <tr>
-                                    <td>1-2 persons</td>
-                                    <td>Private car</td>
-                                    <td>35 € p.P.</td>
-                                </tr>
-                                <tr>
-                                    <td>3-4 persons</td>
-                                    <td>Private mini bus</td>
-                                    <td>24 € p.P.</td>
-                                </tr>
-                                <tr>
-                                    <td>5-6 persons</td>
-                                    <td>Private mini bus</td>
-                                    <td>19 € p.P.</td>
-                                </tr>
-                                <tr>
-                                    <td>7-8 Persons</td>
-                                    <td>Private mini bus</td>
-                                    <td>13 € p.P.</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="table-responsive" style="overflow-x: auto;">
-                                <table class="table table-striped table-bordered table-hover table-condensed">
-                                    <tr>
-                                        <th>Duration</th>
-                                        <th>Trip Type</th>
-                                        <th>Availability</th>
-                                        <th>Pick-up Time</th>
-                                    </tr>
-                                    <tr>
-                                        <td>around 6 hours</td>
-                                        <td>Individually</td>
-                                        <td>Every day</td>
-                                        <td>at around 2 p.m.</td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <!-- Modal Horse -->
-        <div id="modalHorse1" class="modal">
-            <div class="modal-content">
-                <div class="container d-flex justify-content-start">
-                    <span class="close ">&times;</span>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h2>Ride on Horseback through the Desert and Beach</h2>
-                            <p>Ride on horseback through the desert and beach to explore the great natural wonders of
-                                Hurghada on this horseback riding adventure.</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h3>Itinerary</h3>
-                            <p>We’ll pick you up at your hotel, Start your day with a horseback ride guided by a
-                                professional instructor. Ride for 1 hour through the desert and then another hour along
-                                the beach. Enjoy stunning views as your ride along the beach and make unforgettable
-                                memories in an unforgettable environment.</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h3>What to Expect</h3>
-                            <ul>
-                                <li>No need to worry if you’re a beginner, as helmets are provided and a trainer is on
-                                    hand to coach you and provide assistance if you need it.</li>
-                                <li>Enjoy a rare opportunity to ride an Egyptian horse in the sea and desert</li>
-                                <li>Explore the desert on horseback</li>
-                                <li>Play in the sea with your horse</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h3>Transfer Information</h3>
-                            <p>Transfer from any hotel in Hurghada is free. Transfer from (Sahl Hasheesh, Makadi Bay, El
-                                Gouna) is charged extra €5 per person, and from (Soma Bay, Safaga), extra €10 per
-                                person.</p>
-                            <p class="text-danger">Not suitable for
-                                Pregnant women
-                                People with back problems</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="modalHorse2" class="modal">
-            <div class="modal-content">
-                <div class="container d-flex justify-content-start">
-                    <span class="close ">&times;</span>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h2>Ride on Camelback through the Desert and Beach</h2>
-                            <p>Ride on Camelback through the desert and beach to explore the great natural wonders of
-                                Hurghada on this Camelback riding adventure.</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h3>Itinerary</h3>
-                            <p>We’ll pick you up at your hotel, Start your day with a Camelback ride guided by a
-                                professional instructor. Ride for 1 hour through the desert and then another hour along
-                                the beach. Enjoy stunning views as your ride along the beach and make unforgettable
-                                memories in an unforgettable environment.</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h3>What to Expect</h3>
-                            <ul>
-                                <li>No need to worry if you’re a beginner, as helmets are provided and a trainer is on
-                                    hand to coach you and provide assistance if you need it.</li>
-                                <li>Enjoy a rare opportunity to ride an Egyptian camel in the sea and desert</li>
-                                <li>Explore the desert on Camelback</li>
-                                <li>Play in the sea with your horse</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h3>Transfer Information</h3>
-                            <p>Transfer from any hotel in Hurghada is free. Transfer from (Sahl Hasheesh, Makadi Bay, El
-                                Gouna) is charged extra €5 per person, and from (Soma Bay, Safaga), extra €10 per
-                                person.</p>
-                            <p class="text-danger">Not suitable for
-                                Pregnant women
-                                People with back problems</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Special Feutres -->
+    <!-- Card Plls -->
+    <div class="cards my-5">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12 ">
-                    <div class="special-features text-center">
-                        <h2>Our Special Features</h2>
-                        <p class="w-50 m-auto mb-2">Holidays are probably the most valuable time of the year for
-                            everyone.
-                            That's why we
-                            attach great
-                            importance to providing you with an interesting and relaxing time.</p>
-                        <a href="About.html" class="btn btn-light btn-primary">Who we are</a>
-                    </div>
+            <div class="row d-flex m-auto ">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <a href="./trips/boattrips.html">
+                        <div class="card w-100 rounded-pill">
+                            <div class="img-info position-relative overflow-hidden rounded-pill">
+                                <img src="./assets/img/Boattrip.jpeg" class="card-img-top" alt="...">
+                                <div
+                                    class="caption text-center text-white position-absolute text-center d-flex flex-column justify-content-center align-items-center w-100 h-100">
+                                    <h1>
+                                        <a href="./trips/boattrips.html" class="text-decoration-none text-white"
+                                            style="font-size: 52px;">Boat
+                                            Trips</a>
+                                    </h1>
+
+                                </div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="col-md-12">
-                    <div class="feature-item w-100">
-                        <i class="feature-icon fas fa-flag"></i>
-                        <h3>Individual Excursions Throughout Egypt</h3>
-                        <p>We not only visit the most interesting sights, but also show you things off the beaten track.
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <a href="./trips/safari.html">
+                        <div class="card w-100 rounded-pill">
+                            <div class="img-info position-relative overflow-hidden rounded-pill">
+                                <img src="./assets/trips img/Desert Safari.jpg" class="card-img-top"
+                                    alt="Desert Safari">
+                                <div
+                                    class="caption text-center text-white position-absolute text-center d-flex flex-column justify-content-center align-items-center w-100 h-100">
+                                    <h1>
+                                        <a href="./trips/safari.html" class="text-decoration-none text-white"
+                                            style="font-size: 52px;">
+                                            Safari
+                                        </a>
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <a href="./trips/diving.html">
+                        <div class="card w-100 rounded-pill">
+                            <div class="img-info position-relative overflow-hidden rounded-pill">
+                                <img src="./assets/trips img/Diving.jpeg" class="card-img-top" alt="Desert Safari">
+                                <div
+                                    class="caption text-center text-white position-absolute text-center d-flex flex-column justify-content-center align-items-center w-100 h-100">
+                                    <h1 class="fs-1 m-auto">
+                                        <a href="./trips/diving.html" class="text-decoration-none text-white "
+                                            style="font-size: 52px;">
+                                            Diving
+                                        </a>
+                                    </h1>
+
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <a href="./travels.html">
+                        <div class="card w-100 rounded-pill">
+                            <div class="img-info position-relative overflow-hidden rounded-pill">
+                                <img src="./assets/trips img/Cairo.png" class="card-img-top" alt="Desert Safari">
+                                <div
+                                    class="caption text-center text-white position-absolute text-center d-flex flex-column justify-content-center align-items-center w-100 h-100">
+                                    <h1 class="fs-1 m-auto">
+                                        <a href="./travels.html" class="text-decoration-none text-white "
+                                            style="font-size: 52px;">
+                                            Cairo
+                                        </a>
+                                    </h1>
+
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <a href="./travels.html">
+                        <div class="card w-100 rounded-pill">
+                            <div class="img-info position-relative overflow-hidden rounded-pill">
+                                <img src="./assets/trips img/Luxor.png" class="card-img-top" alt="Desert Safari">
+                                <div
+                                    class="caption text-center text-white position-absolute text-center d-flex flex-column justify-content-center align-items-center w-100 h-100">
+                                    <h1 class="fs-1 m-auto">
+                                        <a href="./travels.html" class="text-decoration-none text-white "
+                                            style="font-size: 52px;">
+                                            Luxor
+                                        </a>
+                                    </h1>
+
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="container  h-100">
+        <div class=" d-flex gap-4 w-100 flex-wrap justify-content-between h-100">
+            <ul>
+                <h5>[Excursions from Hurghada, El Gouna, Makady]</h5>
+                <li>Private trip to Luxor</li>
+                <li>Luxor two days private</li>
+                <li>Private trip to Cairo</li>
+                <li>Cairo day trip by plane</li>
+                <li>Cairo two days private</li>
+                <li>Cairo day tour à la carte (exclusive)</li>
+                <li>Cairo Pyramids of Giza, Saqqara and Dahshur Exclusive</li>
+                <li>Dendera excursion half day</li>
+                <li>Dendera & Abydos day tour private</li>
+                <li>Hurghada city tour</li>
+                <li>El-Gouna city tour</li>
+                <li>Aswan & Abu Simbel Two days private</li>
+                <li>Monasteries of St. Antonios & St. Paul</li>
+                <li>3 hours quad tour + camel ride</li>
+                <li>5 hours quad tour + camel ride + dinner</li>
+            </ul>
+            <img src="./assets/CityTours img/Hurghada1.webp" alt="Hurghada Trip" class="img-rv"
+                style="width: 300px; object-fit: cover; border-radius: 15px; box-shadow: 0px 0px 20px black;">
+        </div>
+    </div>
+    <div class="container my-5">
+        <h1 class="text-center">Egypt Day Tours & Hurghada Excursions</h1>
+        <p class="text-center">From visiting the monasteries to a city tour in Hurghada; we offer a lot of
+            variety and fun for the whole family.</p>
+    </div>
+
+
+
+    <!-- Cards -->
+    <div class="cards my-5 container">
+        <div class="row d-flex m-auto">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card w-100 h-100 ">
+                    <div class="img-info position-relative overflow-hidden">
+                        <img src="assets/trips img/Luxor.png" class="card-img-top" alt="...">
+                        <div
+                            class="caption text-center text-white position-absolute text-center d-flex flex-column justify-content-center align-items-center w-100 h-100">
+                            <h1>Luxor</h1>
+                            <p>Best Price For Person</p>
+                            <span class="bg-white w-100 mb-3"></span>
+                            <h3>60.00 EUR</h3>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Luxor Travel</h5>
+                        <p class="card-text ms-4 fst-italic">
+                            Your Favourite Trip!
                         </p>
                     </div>
-                    <div class="feature-item">
-                        <i class="feature-icon fas fa-euro-sign"></i>
-                        <h3>Fair Prices / No Extra Costs</h3>
-                        <p>We offer high quality and personal service at affordable prices.</p>
+
+                    <div class="card-body d-flex justify-content-center align-items-center w-100">
+                        <a href="./travels.html" class="text-decoration-none w-100 btn border-black btn-book w-100">
+
+                            More Details
+                        </a>
                     </div>
-                    <div class="feature-item">
-                        <i class="feature-icon fas fa-camera"></i>
-                        <h3>Time for You</h3>
-                        <p>Thanks to our small group size, you will have enough time during the excursions to see
-                            everything
-                            at your leisure.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card w-100 h-100">
+                    <div class="img-info position-relative overflow-hidden">
+                        <img src="assets/trips img/Cairo.png" class="card-img-top" alt="...">
+                        <div
+                            class="caption text-center text-white position-absolute text-center d-flex flex-column justify-content-center align-items-center w-100 h-100">
+                            <h1>Cairo</h1>
+                            <p>Best Price For Person</p>
+                            <span class="bg-white w-100 mb-3"></span>
+                            <h3>70.00 EUR</h3>
+                        </div>
                     </div>
-                    <div class="feature-item">
-                        <i class="feature-icon fas fa-calendar-alt"></i>
-                        <h3>We Adapt to You</h3>
-                        <p>Most of our excursions can be customized to suit your schedule and needs.</p>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Cairo Travel</h5>
+                        <p class="card-text ms-4 fst-italic">
+                            Your Favourite Trip!
+                        </p>
+                    </div>
+
+                    <div class="card-body d-flex justify-content-center align-items-center w-100">
+                        <a href="./travels.html" class="text-decoration-none w-100 btn border-black btn-book w-100">
+
+                            More Details
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card w-100 h-100 ">
+                    <div class="img-info position-relative overflow-hidden">
+                        <img src="assets/trips img/Hurghada.jpg" class="card-img-top" alt="...">
+                        <div
+                            class="caption text-center text-white position-absolute text-center d-flex flex-column justify-content-center align-items-center w-100 h-100">
+                            <h1>Hurghada</h1>
+                            <p>Best Price For Person</p>
+                            <span class="bg-white w-100 mb-3"></span>
+                            <h3>20.00 EUR</h3>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Hurghada Travel</h5>
+                        <p class="card-text ms-4 fst-italic">
+                            Your Favourite Trip!
+                        </p>
+                    </div>
+
+                    <div class="card-body d-flex justify-content-center align-items-center w-100">
+                        <a href="./travels.html" class="text-decoration-none w-100 btn border-black btn-book w-100">
+
+                            More Details
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="cards my-5 container">
+        <div class=" row d-flex m-auto">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card w-100">
+                    <div class="img-info position-relative overflow-hidden">
+                        <img src="./assets/trips img/paradiseisland.jpg" class="card-img-top" alt="...">
+                        <div
+                            class="caption text-center text-white position-absolute text-center d-flex flex-column justify-content-center align-items-center w-100 h-100">
+                            <h1>PARADISE ISLAND</h1>
+                            <p>Best Price For Person</p>
+                            <span class="bg-white w-100 mb-3"></span>
+                            <h3>$25.00</h3>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Paradise Island</h5>
+                        <p class="card-text ms-4 fst-italic">
+                            Your Favourite Trip!
+                        </p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item text-capitalize">• duration 7 - 8 hours</li>
+                        <li class="list-group-item text-capitalize">• snorkelling + equipments</li>
+                        <li class="list-group-item text-capitalize">• soft & hot drinks, and bufet lunch on boat
+                        </li>
+                        <li class="list-group-item text-capitalize">• water sports (banana and sofa bed)</li>
+                    </ul>
+                    <div class="card-body d-flex justify-content-center  gap-4">
+                        <button class="btn border-black btn-book w-100"><a href="https://wa.me/201552378066"
+                                class="text-decoration-none ">Book Now</a></button>
+                        <button class="btn border-black btn-book w-100 moreDetailsBtn" data-modal="modal1"> More
+                            Details</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Desert Safari -->
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card w-100">
+                    <div class="img-info position-relative overflow-hidden">
+                        <img src="./assets/trips img/Desert Safari.jpg" class="card-img-top" alt="...">
+                        <div
+                            class="caption text-center text-white position-absolute text-center d-flex flex-column justify-content-center align-items-center w-100 h-100">
+                            <h1>Desert Safari</h1>
+                            <p>Best Price For Person</p>
+                            <span class="bg-white w-100 mb-3"></span>
+                            <h3>20.00 EUR</h3>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Desert Safari</h5>
+                        <p class="card-text ms-4 fst-italic">
+                            Your Favourite Trip!
+                        </p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item text-capitalize">• duration 3 hours or safari afternoon
+                            (+ 5
+                            €)</li>
+                        <li class="list-group-item text-capitalize">• experience an exciting Jeep, ATV Quad, and
+                            Buggy </li>
+                        <li class="list-group-item text-capitalize">• visit a Bedouin village in the desert
+                        </li>
+                        <li class="list-group-item text-capitalize">• camels ride
+                        </li>
+                    </ul>
+                    <div class="card-body d-flex justify-content-center gap-4">
+                        <button class="btn border-black btn-book w-100"><a href="https://wa.me/201552378066"
+                                class="text-decoration-none ">Book
+                                Now</a></button>
+                        <button class="btn border-black btn-book w-100" data-modal="modal2"> More
+                            Details</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Super Desert Safari -->
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card w-100">
+                    <div class="img-info position-relative overflow-hidden">
+                        <img src="./assets/trips img/Desert Safari.jpg" class="card-img-top" alt="...">
+                        <div
+                            class="caption text-center text-white position-absolute text-center d-flex flex-column justify-content-center align-items-center w-100 h-100">
+                            <h1>Super Desert Safari</h1>
+                            <p>Best Price For Person</p>
+                            <span class="bg-white w-100 mb-3"></span>
+                            <h3>30.00 EUR</h3>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Super Desert Safari</h5>
+                        <p class="card-text ms-4 fst-italic">
+                            Your Favourite Trip!
+                        </p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item text-capitalize">• duration 5 hours or safari afternoon
+                            (+ 5
+                            €)</li>
+                        <li class="list-group-item text-capitalize">• experience an exciting Jeep, ATV Quad, and
+                            Buggy </li>
+                        <li class="list-group-item text-capitalize">• visit a Bedouin village in the desert
+                        </li>
+                        <li class="list-group-item text-capitalize">• camels ride
+                        </li>
+                    </ul>
+                    <div class="card-body d-flex justify-content-center gap-4">
+                        <button class="btn border-black btn-book w-100"><a href="https://wa.me/201552378066"
+                                class="text-decoration-none ">Book
+                                Now</a></button>
+                        <button class="btn border-black btn-book w-100" data-modal="modal2"> More
+                            Details</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Private Desert Safari -->
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card w-100">
+                    <div class="img-info position-relative overflow-hidden">
+                        <img src="./assets/trips img/Desert Safari.jpg" class="card-img-top" alt="...">
+                        <div
+                            class="caption text-center text-white position-absolute text-center d-flex flex-column justify-content-center align-items-center w-100 h-100">
+                            <h1>Private Desert Safari</h1>
+                            <p>Best Price For Person</p>
+                            <span class="bg-white w-100 mb-3"></span>
+                            <h3>40.00 EUR</h3>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Private Desert Safari</h5>
+                        <p class="card-text ms-4 fst-italic">
+                            Your Favourite Trip!
+                        </p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item text-capitalize">• duration 3 hours or safari afternoon
+                            (+ 5
+                            €)</li>
+                        <li class="list-group-item text-capitalize">• experience an exciting Jeep, ATV Quad, and
+                            Buggy </li>
+                        <li class="list-group-item text-capitalize">• visit a Bedouin village in the desert
+                        </li>
+                        <li class="list-group-item text-capitalize">• camels ride
+                        </li>
+                    </ul>
+                    <div class="card-body d-flex justify-content-center gap-4">
+                        <button class="btn border-black btn-book w-100"><a href="https://wa.me/201552378066"
+                                class="text-decoration-none ">Book
+                                Now</a></button>
+                        <button class="btn border-black btn-book w-100" data-modal="modal2"> More
+                            Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card w-100">
+                    <div class="img-info position-relative overflow-hidden">
+                        <img src="./assets/CityTours img/Hurghada3.webp" class="card-img-top" alt="...">
+                        <div
+                            class="caption text-center text-white position-absolute text-center d-flex flex-column justify-content-center align-items-center w-100 h-100">
+                            <h1>Hurghada</h1>
+                            <p>Best Price For Person</p>
+                            <span class="bg-white w-100 mb-3"></span>
+                            <h3>$513</h3>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-capitalize">Hurghada Tour</h5>
+                        <p class="card-text ms-4 fst-italic">
+                            Hurghada: Morning or sunset Sights Guided Tour with Shopping
+                        </p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item text-capitalize">• 3 hours</li>
+                        <li class="list-group-item text-capitalize">• small group
+                        </li>
+                        <li class="list-group-item text-capitalize">• Pick Up availabe
+                        </li>
+                        <li class="list-group-item"></li>
+                    </ul>
+                    <div class="card-body d-flex justify-content-center gap-4">
+                        <button class="btn border-black btn-book w-100"><a href="https://wa.me/201552378066"
+                                class="text-decoration-none ">Book
+                                Now</a></button>
+                        <button class="btn border-black btn-book w-100" data-modal="modal3"> More
+                            Details</button>
                     </div>
                 </div>
             </div>
         </div>
-
-        <!-- Contact-->
-        <section class="page-section" id="contact">
+        <h1 class="text-center fs-1 mt-3">Horse Riding</h1>
+        <div class="row d-flex m-auto mt-5">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card w-100">
+                    <div class="img-info position-relative overflow-hidden">
+                        <img src="./assets/Horse-riding-4.jpg" class="card-img-top" alt="...">
+                        <div
+                            class="caption text-center text-white position-absolute text-center d-flex flex-column justify-content-center align-items-center w-100 h-100">
+                            <h1>Horse Riding</h1>
+                            <p>Best Price For Person</p>
+                            <span class="bg-white w-100 mb-3"></span>
+                            <h3>20 EUR</h3>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-capitalize">Horse Riding Hurghada</h5>
+                        <p class="card-text ms-4 fst-italic">
+                            Your Favourite Ride
+                        </p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item text-capitalize">• 2-3 hours</li>
+                        <li class="list-group-item text-capitalize">• Every Day
+                        </li>
+                        <li class="list-group-item text-capitalize">• Hotel pickup offered
+                        </li>
+                        <li class="list-group-item">• Native Speaker</li>
+                    </ul>
+                    <div class="card-body d-flex justify-content-center gap-4">
+                        <button class="btn border-black btn-book w-100"><a href="https://wa.me/201552378066"
+                                class="text-decoration-none ">Book
+                                Now</a></button>
+                        <button class="btn border-black btn-book w-100" data-modal="modalHorse1"> More
+                            Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card w-100">
+                    <div class="img-info position-relative overflow-hidden">
+                        <img src="./assets/trips img/egypt-camel-ride.webp" class="card-img-top" alt="...">
+                        <div
+                            class="caption text-center text-white position-absolute text-center d-flex flex-column justify-content-center align-items-center w-100 h-100">
+                            <h1>Camel Riding</h1>
+                            <p>Best Price For Person</p>
+                            <span class="bg-white w-100 mb-3"></span>
+                            <h3>20 EUR</h3>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-capitalize">Camel Riding</h5>
+                        <p class="card-text ms-4 fst-italic">
+                            Your Favourite Ride
+                        </p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item text-capitalize">• 2-3 hours</li>
+                        <li class="list-group-item text-capitalize">• Every Day
+                        </li>
+                        <li class="list-group-item text-capitalize">• Hotel pickup offered
+                        </li>
+                        <li class="list-group-item">• Native Speaker</li>
+                    </ul>
+                    <div class="card-body d-flex justify-content-center gap-4">
+                        <button class="btn border-black btn-book w-100"><a href="https://wa.me/201552378066"
+                                class="text-decoration-none ">Book
+                                Now</a></button>
+                        <button class="btn border-black btn-book w-100" data-modal="modalHorse2"> More
+                            Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Cards -->
+    <!-- MOdal Paradise island -->
+    <div class="modal" id="modal1">
+        <div class="modal-content">
+            <div class="container d-flex justify-content-start">
+                <span class="close ">&times;</span>
+            </div>
             <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Contact Us</h2>
-                    <h3 class="section-subheading text-muted">We are at your service. Do not hesitate to contact us</h3>
+                <h2>Paradise Island Snorkeling Day Tour</h2>
+
+                <p>Enjoy unforgettable swimming on the private beach on Paradise Island and a relaxing boat trip on
+                    the
+                    Red Sea.</p>
+
+                <p>Paradise Island is a nature reserve in the Red Sea off Hurghada and offers its visitors white
+                    sandy
+                    beaches and colorful pristine coral reefs.</p>
+
+                <p>Swim and snorkel with an incredible variety of different fish and discover the unique underwater
+                    world.</p>
+
+                <h3>Program of Paradise Island Snorkeling Day Tour</h3>
+
+                <ul>
+                    <li>Boat trip with a snorkel stop</li>
+                    <li>Stay on the island</li>
+                    <li>Folklore show</li>
+                </ul>
+
+                <h3>Description for Paradise Island Snorkeling Day Tour</h3>
+
+                <p>We will pick you up from your hotel in a fully air-conditioned vehicle and transfer you to the
+                    port
+                    where your snorkeling excursion begins. You get on board your boat, where you can choose a
+                    comfortable seat on the deck. There is both sun and shade on the deck. After the friendly crew
+                    have
+                    introduced themselves and briefly brief you on safety on board, a fabulous and interesting
+                    journey
+                    through the Red Sea begins for your snorkelling trip.</p>
+
+                <p>Admire the colorful corals and swim with a variety of exotic fish such as clown fish, butterfly
+                    fish,
+                    grouper, parrotfish and many more. Thanks to the crystal clear water, they are all perfectly
+                    visible. Also watch out for other marine life such as stingrays and turtles.</p>
+
+                <p>After a snorkeling stop, we will continue to Paradise Island, where we will arrive at around
+                    12:00.
+                    There you will receive lunch (buffet) and have time to relax, swim or snorkel on the white sandy
+                    beach. There will be a folklore show for your entertainment around 14:00 and then you can relax
+                    a
+                    bit before we return by boat to the port at around 15:45. (earlier check-out in winter) where
+                    your
+                    transfer car will be waiting for you to take you back to your hotel.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Safari -->
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <div class="container d-flex justify-content-start">
+                <span class="close ">&times;</span>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2><i class="fas fa-jeep"></i> Safari by Quad Bike & Camel Ride</h2>
+                        <p>This 3-hour tour is an extremely dusty adventure with absolute fun guaranteed!</p>
+                        <p>The 3 Hour Safari by Quad Bike is a great opportunity to see the desert in all its beauty
+                            and
+                            splendor. The Safari by Quad Bike Tour is for those who want to cross the desert on a
+                            four-wheeled ATV.</p>
+                        <p>During the Safari by Quad Bike & Camel Ride, you can explore the life and traditions of
+                            the
+                            Bedouin village. And also ride a camel and learn interesting facts about their life in
+                            the
+                            desert.</p>
+                        <p>Memories and impressions of the excursion Safari by Quad Bike & Camel Ride will stay with
+                            you
+                            for a long time!</p>
+                    </div>
                 </div>
 
-                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                    <div class="row align-items-stretch mb-5">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <!-- Name input-->
-                                <input class="form-control" id="name" type="text" placeholder="Your Name *"
-                                    data-sb-validations="required" />
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                            </div>
-                            <div class="form-group">
-                                <!-- Email address input-->
-                                <input class="form-control" id="email" type="email" placeholder="Your Email *"
-                                    data-sb-validations="required,email" />
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.
-                                </div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                            </div>
-                            <div class="form-group mb-md-0">
-                                <!-- Phone number input-->
-                                <input class="form-control" id="phone" type="tel" placeholder="Your Phone *"
-                                    data-sb-validations="required" />
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is
-                                    required.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group form-group-textarea mb-md-0">
-                                <!-- Message input-->
-                                <textarea class="form-control" id="message" placeholder="Your Message *"
-                                    data-sb-validations="required"></textarea>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.
-                                </div>
-                            </div>
-                        </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3>Program of 3 Hours Safari by Quad Bike & Camel Ride</h3>
+                        <table class="table table-striped">
+                            <tr>
+                                <th>Time</th>
+                                <th>Program</th>
+                            </tr>
+                            <tr>
+                                <td>⏰ 7:30</td>
+                                <td>Pick up from the hotel</td>
+                            </tr>
+                            <tr>
+                                <td>⏰ 8:00</td>
+                                <td>Arrival at Safari Station</td>
+                            </tr>
+                            <tr>
+                                <td>⏰ 11:00</td>
+                                <td>Departure to the hotel</td>
+                            </tr>
+                            <tr>
+                                <td>⏰ 11:30</td>
+                                <td>Back in hotel</td>
+                            </tr>
+                        </table>
                     </div>
-                    <!-- Submit success message-->
-                    <!---->
-                    <!-- This is what your users will see when the form-->
-                    <!-- has successfully submitted-->
-                    <div class="d-none" id="submitSuccessMessage">
-                        <div class="text-center text-white mb-3">
-                            <div class="fw-bolder">Form submission successful!</div>
-                            To activate this form, sign up at
-                            <br />
+                </div>
 
-                            <a aria-label="Chat on WhatsApp" href="https://wa.me/201552378066"> <img
-                                    alt="Chat on WhatsApp" src="assets/img/portfolio/WhatsAppButtonGreenLarge.png" />
-                            </a>
-
-                            <!-- <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>-->
-                        </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3>Description for 3 Hours Safari by Quad Bike & Camel Ride tour</h3>
+                        <p>We will pick you up from your hotel at about 07.30 am and bring you to the Quad Bike
+                            training
+                            station. There you will receive instructions on how to drive your Quad Bike correctly
+                            and
+                            safely. And also make some test laps under the supervision of an instructor.</p>
+                        <p>All Quad Bikes have an automatic control system, so in order to ride, you just need to
+                            apply
+                            the gas and the brake. Learning to drive a Quad Bike is not difficult at all, we are
+                            sure
+                            you will succeed!</p>
+                        <p>We drive about 1 hour (approx. 25 km) with Quad Bike until we arrive to the Bedouin
+                            village.
+                        </p>
+                        <p>Friendly Bedouins will meet and greet you in the Bedouin Village. They will be happy to
+                            show
+                            you how they live, tell you about their traditions, life and treat you to Bedouin tea.
+                        </p>
+                        <p>In the same place you will have the opportunity to ride camels and explore the area.
+                            After
+                            that, you have to return on your Quad Bike and drive 25 km back to the Quad Bike
+                            training
+                            station from where we started.</p>
+                        <p>After that, we will bring you back to your hotel.</p>
                     </div>
-                    <!-- Submit error message-->
-                    <!---->
-                    <!-- This is what your users will see when there is-->
-                    <!-- an error submitting the form-->
-                    <div class="d-none" id="submitErrorMessage">
-                        <div class="text-center text-danger mb-3">Error sending message!</div>
-                    </div>
-                    <!-- Submit Button-->
-                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled"
-                            id="submitButton" type="submit">Send Message</button></div>
-                </form>
+                </div>
             </div>
-        </section>
-
-        <footer class="footer py-4">
+        </div>
+    </div>
+    <!-- Modal3 -->
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <div class="container d-flex justify-content-start">
+                <span class="close ">&times;</span>
+            </div>
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-4 text-lg-start">Copyright &copy; ALBATROS TRAVEL 2024</div>
-                    <div class="col-lg-4 my-3 my-lg-0">
-                        <a class="btn btn-dark btn-social mx-2" href="https://web.facebook.com/"
-                            aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/"
-                            aria-label="instagram"><i class="fa-brands fa-instagram"></i></a>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2><i class="fas fa-city"></i> Hurghada Private City Tour</h2>
+                        <p>Would you like to get to know the real, original Hurghada? Would you like to visit the
+                            tourist
+                            attractions of the city? Are you tired of mass tourism and coffee trips? Would you like
+                            to see, be amazed
+                            and really enjoy?</p>
+                        <p>We have put together the right mix for you. Of course you also have the possibility to
+                            design your tour
+                            with us individually! Hurghada city tour with Memnon Reisen is away from mass tourism!
+                        </p>
                     </div>
-                    <!-- <div class="col-lg-4 text-lg-end">
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3>Program of Hurghada Private City Tour</h3>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-mosque"></i> Mosque El Mina Masjid</li>
+                            <li><i class="fas fa-church"></i> Coptic Cathedral of Saint Shenouda</li>
+                            <li><i class="fas fa-fish"></i> The fish market</li>
+                            <li><i class="fas fa-vegetable"></i> The vegetable market</li>
+                            <li><i class="fas fa-marina"></i> Hurghada Marina Boulevard</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3>Description for Hurghada Private City Tour</h3>
+                        <p>AT 14:00. we will pick you up from your hotel in a quality air-conditioned vehicle.</p>
+                        <p>The first stop takes you straight to the highest point in the city. From here a beautiful
+                            panoramic view
+                            of the entire city of Hurghada and the Red Sea opens up.</p>
+                        <p>Then we go to the city pier. Let yourself be enchanted by the beautiful yachts and the
+                            harbor atmosphere
+                            as you sail along a leisurely stroll. We continue our tour to the fish market. Next stop
+                            is the oldest
+                            church in the city, the Coptic Church and the largest seaside mosque.</p>
+                        <p>From there we will drive to the vegetable and fruit market in the old town. We then drive
+                            to a local cafe
+                            to enjoy mint tea or Egyptian coffee.</p>
+                        <p>If you have a special request, you can discuss it with our guide. We will stop at all
+                            interesting places.
+                        </p>
+                        <p>Around 19:00. we will take you back to your hotel.</p>
+                        <p>Our tour of Hurghada will be absolutely thrilling and you will get many new experiences
+                            from Hurghada.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3>Included Services</h3>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-car"></i> Pick-up from the lobby of your hotel</li>
+                            <li><i class="fas fa-comment"></i> English speaking guide</li>
+                            <li><i class="fas fa-phone"></i> Customer support is available 24/7</li>
+                            <li><i class="fas fa-shield-alt"></i> Insurance included</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3>Prices</h3>
+                        <table class="table table-striped">
+                            <tr>
+                                <th>Number of people</th>
+                                <th>Vehicle</th>
+                                <th>Price per Adult</th>
+                            </tr>
+                            <tr>
+                                <td>1-2 persons</td>
+                                <td>Private car</td>
+                                <td>35 € p.P.</td>
+                            </tr>
+                            <tr>
+                                <td>3-4 persons</td>
+                                <td>Private mini bus</td>
+                                <td>24 € p.P.</td>
+                            </tr>
+                            <tr>
+                                <td>5-6 persons</td>
+                                <td>Private mini bus</td>
+                                <td>19 € p.P.</td>
+                            </tr>
+                            <tr>
+                                <td>7-8 Persons</td>
+                                <td>Private mini bus</td>
+                                <td>13 € p.P.</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="table-responsive" style="overflow-x: auto;">
+                            <table class="table table-striped table-bordered table-hover table-condensed">
+                                <tr>
+                                    <th>Duration</th>
+                                    <th>Trip Type</th>
+                                    <th>Availability</th>
+                                    <th>Pick-up Time</th>
+                                </tr>
+                                <tr>
+                                    <td>around 6 hours</td>
+                                    <td>Individually</td>
+                                    <td>Every day</td>
+                                    <td>at around 2 p.m.</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Modal Horse -->
+    <div id="modalHorse1" class="modal">
+        <div class="modal-content">
+            <div class="container d-flex justify-content-start">
+                <span class="close ">&times;</span>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Ride on Horseback through the Desert and Beach</h2>
+                        <p>Ride on horseback through the desert and beach to explore the great natural wonders of
+                            Hurghada on this horseback riding adventure.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3>Itinerary</h3>
+                        <p>We’ll pick you up at your hotel, Start your day with a horseback ride guided by a
+                            professional instructor. Ride for 1 hour through the desert and then another hour along
+                            the beach. Enjoy stunning views as your ride along the beach and make unforgettable
+                            memories in an unforgettable environment.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3>What to Expect</h3>
+                        <ul>
+                            <li>No need to worry if you’re a beginner, as helmets are provided and a trainer is on
+                                hand to coach you and provide assistance if you need it.</li>
+                            <li>Enjoy a rare opportunity to ride an Egyptian horse in the sea and desert</li>
+                            <li>Explore the desert on horseback</li>
+                            <li>Play in the sea with your horse</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3>Transfer Information</h3>
+                        <p>Transfer from any hotel in Hurghada is free. Transfer from (Sahl Hasheesh, Makadi Bay, El
+                            Gouna) is charged extra €5 per person, and from (Soma Bay, Safaga), extra €10 per
+                            person.</p>
+                        <p class="text-danger">Not suitable for
+                            Pregnant women
+                            People with back problems</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modalHorse2" class="modal">
+        <div class="modal-content">
+            <div class="container d-flex justify-content-start">
+                <span class="close ">&times;</span>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Ride on Camelback through the Desert and Beach</h2>
+                        <p>Ride on Camelback through the desert and beach to explore the great natural wonders of
+                            Hurghada on this Camelback riding adventure.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3>Itinerary</h3>
+                        <p>We’ll pick you up at your hotel, Start your day with a Camelback ride guided by a
+                            professional instructor. Ride for 1 hour through the desert and then another hour along
+                            the beach. Enjoy stunning views as your ride along the beach and make unforgettable
+                            memories in an unforgettable environment.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3>What to Expect</h3>
+                        <ul>
+                            <li>No need to worry if you’re a beginner, as helmets are provided and a trainer is on
+                                hand to coach you and provide assistance if you need it.</li>
+                            <li>Enjoy a rare opportunity to ride an Egyptian camel in the sea and desert</li>
+                            <li>Explore the desert on Camelback</li>
+                            <li>Play in the sea with your horse</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3>Transfer Information</h3>
+                        <p>Transfer from any hotel in Hurghada is free. Transfer from (Sahl Hasheesh, Makadi Bay, El
+                            Gouna) is charged extra €5 per person, and from (Soma Bay, Safaga), extra €10 per
+                            person.</p>
+                        <p class="text-danger">Not suitable for
+                            Pregnant women
+                            People with back problems</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Special Feutres -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 ">
+                <div class="special-features text-center">
+                    <h2>Our Special Features</h2>
+                    <p class="w-50 m-auto mb-2">Holidays are probably the most valuable time of the year for
+                        everyone.
+                        That's why we
+                        attach great
+                        importance to providing you with an interesting and relaxing time.</p>
+                    <a href="About.html" class="btn btn-light btn-primary">Who we are</a>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="feature-item w-100">
+                    <i class="feature-icon fas fa-flag"></i>
+                    <h3>Individual Excursions Throughout Egypt</h3>
+                    <p>We not only visit the most interesting sights, but also show you things off the beaten track.
+                    </p>
+                </div>
+                <div class="feature-item">
+                    <i class="feature-icon fas fa-euro-sign"></i>
+                    <h3>Fair Prices / No Extra Costs</h3>
+                    <p>We offer high quality and personal service at affordable prices.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="feature-icon fas fa-camera"></i>
+                    <h3>Time for You</h3>
+                    <p>Thanks to our small group size, you will have enough time during the excursions to see
+                        everything
+                        at your leisure.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="feature-icon fas fa-calendar-alt"></i>
+                    <h3>We Adapt to You</h3>
+                    <p>Most of our excursions can be customized to suit your schedule and needs.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact-->
+    <section class="page-section" id="contact">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Contact Us</h2>
+                <h3 class="section-subheading text-muted">We are at your service. Do not hesitate to contact us</h3>
+            </div>
+
+            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                <div class="row align-items-stretch mb-5">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <!-- Name input-->
+                            <input class="form-control" id="name" type="text" placeholder="Your Name *"
+                                data-sb-validations="required" />
+                            <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                        </div>
+                        <div class="form-group">
+                            <!-- Email address input-->
+                            <input class="form-control" id="email" type="email" placeholder="Your Email *"
+                                data-sb-validations="required,email" />
+                            <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.
+                            </div>
+                            <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                        </div>
+                        <div class="form-group mb-md-0">
+                            <!-- Phone number input-->
+                            <input class="form-control" id="phone" type="tel" placeholder="Your Phone *"
+                                data-sb-validations="required" />
+                            <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is
+                                required.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group form-group-textarea mb-md-0">
+                            <!-- Message input-->
+                            <textarea class="form-control" id="message" placeholder="Your Message *"
+                                data-sb-validations="required"></textarea>
+                            <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Submit success message-->
+                <!---->
+                <!-- This is what your users will see when the form-->
+                <!-- has successfully submitted-->
+                <div class="d-none" id="submitSuccessMessage">
+                    <div class="text-center text-white mb-3">
+                        <div class="fw-bolder">Form submission successful!</div>
+                        To activate this form, sign up at
+                        <br />
+
+                        <a aria-label="Chat on WhatsApp" href="https://wa.me/201552378066"> <img alt="Chat on WhatsApp"
+                                src="assets/img/portfolio/WhatsAppButtonGreenLarge.png" />
+                        </a>
+
+                        <!-- <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>-->
+                    </div>
+                </div>
+                <!-- Submit error message-->
+                <!---->
+                <!-- This is what your users will see when there is-->
+                <!-- an error submitting the form-->
+                <div class="d-none" id="submitErrorMessage">
+                    <div class="text-center text-danger mb-3">Error sending message!</div>
+                </div>
+                <!-- Submit Button-->
+                <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled"
+                        id="submitButton" type="submit">Send Message</button></div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-lg-start">Copyright &copy; ALBATROS TRAVEL 2024</div>
+                <div class="col-lg-4 my-3 my-lg-0">
+                    <a class="btn btn-dark btn-social mx-2" href="https://web.facebook.com/" aria-label="Facebook"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/" aria-label="instagram"><i
+                            class="fa-brands fa-instagram"></i></a>
+                </div>
+                <!-- <div class="col-lg-4 text-lg-end">
                 <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
                 <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
             </div>-->
-                </div>
             </div>
-        </footer>
-    </div>
+        </div>
+    </footer>
 
     <!-- Core JS-->
     <script src="js/scripts.js"></script>

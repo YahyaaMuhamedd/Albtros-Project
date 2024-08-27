@@ -177,7 +177,9 @@ const translations = {
         "intro-text": "Now book your Egypt excursions online. We offer a wide range of tours & activities in Egypt and tickets for the most popular attractions. We are in Egypt and specifically for Egypt holidays, Egypt excursions & day trips and tours throughout Egypt.",
         "free-cancellation": "Free cancellation",
         "no-coffee-trip": "No coffee trip",
-        "local-guides": "Local guides"
+        "high-quality-services": "High quality of service",
+        "best-price-guarantee": "Best price guarantee",
+        "insurance-included": "Insurance included",
     },
     ru: {
         "help-text": "Если вы не нашли то, что искали, не стесняйтесь писать нам, и мы поможем вам как можно скорее!",
@@ -203,7 +205,9 @@ const translations = {
         "intro-text": "Забронируйте экскурсии по Египту онлайн. Мы предлагаем широкий выбор туров и развлечений в Египте и билеты на самые популярные достопримечательности. Мы в Египте и специально для египетских праздников, экскурсий и однодневных поездок и туров по всему Египту.",
         "free-cancellation": "Бесплатная отмена",
         "no-coffee-trip": "Без поездок за кофе",
-        "local-guides": "Местные гиды"
+        "high-quality-services": "Высокое качество обслуживания",
+        "best-price-guarantee": "Гарантия лучшей цены",
+        "insurance-included": "Включена страховка"
     }
 };
 

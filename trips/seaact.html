@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="To book hotels in hurghada" />
+    <meta name="author" content="" />
+    <title>ALBATROS - BoatTrips</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sevillana&display=swap" rel="stylesheet">
+    <!-- Custom CSS and Bootstrap -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body id="page-top">
+    <!-- Popup Container Help  -->
+    <div class="pop-up-bg" id="pop-up-bg">
+
+        <div id="help-popup" class="popup">
+            <div class="popup-content d-flex flex-column gap-3">
+                <span id="close-popup" class="close-button fs-3">&times;</span>
+                <p>If you have not found what you are looking for,
+                    please do not hesitate to write to us
+                    and we will help you as soon as possible!</p>
+                <button class="btn border-black btn-book w-100"><a href="https://wa.me/201552378066"
+                        class="text-decoration-none ">Send WhatsApp</a></button>
+            </div>
+        </div>
+    </div>
+    <!-- End -->
+    <div class="position-fixed " style="bottom: 20px; right: 20px; z-index: 10000;">
+        <a class="navbar-brand text-center text-white" href="https://wa.me/201552378066">
+            <img src="../assets/img/whatsapp.png" alt="WhatsApp" width="60px" height="60px">
+        </a>
+    </div>
+    <!-- Navigation-->
+    <div class="call py-1 d-flex flex-column bg-dark ">
+        <a class="navbar-brand text-center text-white" href="https://wa.me/201552378066">
+            <img src="../assets/img/whatsapp.png" alt="WhatsApp" width="25px" height="25px">
+            Call Or WhatsApp :
+            +201552378066
+        </a>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="mainNav">
+        <div class="container ps-4 pe-4 rv-logo">
+
+            <a class="navbar-brand" href="#page-top"><img src="../assets/img/Asset3.png" alt="..." /></a>
+            <button class="navbar-toggler position-relative hamburger-init" onclick="menuBtnFunction(this)"
+                type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+
+                <span class="bar top-bar"></span>
+                <span class="bar middle-bar"></span>
+                <span class="bar bottom-bar"></span>
+
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a class="nav-link text-warning" href="../index.html"><i
+                                class="fa-solid fa-house"></i> Home
+                        </a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-warning " href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Trips
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../trips/boattrips.html">Boat Trips</a></li>
+                            <li><a class="dropdown-item" href="../trips/safari.html">Safari</a></li>
+                            <li><a class="dropdown-item" href="../trips/diving.html">Diving</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link text-warning" href="../Hotels.html">Hotels</a></li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle text-warning" role="button" href="citytours.html"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            City Tours</a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-link"><a class="dropdown-item" href="../CityTours/hurghada.html">hurghada</a>
+                            </li>
+                            <li class="nav-link"><a class="dropdown-item" href="../CityTours/Gouna.html">El Gouna</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link text-warning" href="../travels.html">Travels</a></li>
+                    <li class="nav-item"><a class="nav-link text-warning" href="../About.html">About</a></li>
+                    <li class="nav-item dropdown d-none">
+                        <a class="nav-link dropdown-toggle text-warning" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Language
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" onclick="changeLanguage('en')">English</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="changeLanguage('ar')">العربية</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="changeLanguage('ru')">Русский</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End NavBar -->
+
+    <!-- Masthead-->
+    <!-- <header class="masthead">
+        <div class="container">
+            <div class="masthead-subheading">
+                <h1>ALBATROS</h1>
+                <P>RED SEA CLASSIC</P>
+            </div>
+            <div class="masthead-heading ">
+                <p class="text-uppercase">Your Best Choice</p>
+                <a class="btn btn-primary book-btn text-uppercase" href="https://wa.me/201552378066">book now</a>
+            </div>
+        </div>
+    </header> -->
+    <!-- End Masthead-->
+    <div class="cards my-5">
+        <div class="container">
+            <div class="row d-flex m-auto">
+
+                <h1 class="text-center fs-1 fw-bold my-5">Parasailing In Hurghada</h1>
+                <div class="row d-flex m-auto">
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <div class="card w-100">
+                            <div class="img-info position-relative overflow-hidden">
+                                <img src="../assets/trips img/singleparachute.jpg" class="card-img-top" alt="...">
+                                <div
+                                    class="caption text-center text-white position-absolute text-center d-flex flex-column justify-content-center align-items-center w-100 h-100">
+                                    <h1>Single Parasailing</h1>
+                                    <p>Best Price For Person</p>
+                                    <span class="bg-white w-100 mb-3"></span>
+                                    <h3>13.00 EUR</h3>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Single Parasailing</h5>
+                                <p class="card-text ms-4 fst-italic">
+                                    Your Favourite Trip!
+                                </p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item text-capitalize">• pick up & drop off at your hotel</li>
+                                <li class="list-group-item text-capitalize">• Parasailing (10 min , on air)</li>
+                                <li class="list-group-item text-capitalize">• Life jacket
+                                </li>
+                                <li class="list-group-item text-capitalize">• speed boat</li>
+                            </ul>
+                            <div class="card-body d-flex justify-content-center  gap-4">
+                                <button class="btn border-black btn-book w-100"><a href="https://wa.me/201552378066"
+                                        class="text-decoration-none ">Book Now</a></button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <div class="card w-100">
+                            <div class="img-info position-relative overflow-hidden">
+                                <img src="../assets/trips img/doubleparachute.jpg" class="card-img-top" alt="...">
+                                <div
+                                    class="caption text-center text-white position-absolute text-center d-flex flex-column justify-content-center align-items-center w-100 h-100">
+                                    <h1>Double Parasailing</h1>
+                                    <p>Best Price For 2 Person</p>
+                                    <span class="bg-white w-100 mb-3"></span>
+                                    <h3>20.00 EUR</h3>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Double Parasailing</h5>
+                                <p class="card-text ms-4 fst-italic">
+                                    Your Favourite Trip!
+                                </p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item text-capitalize">• pick up & drop off at your hotel</li>
+                                <li class="list-group-item text-capitalize">• Parasailing (10 min , on air)</li>
+                                <li class="list-group-item text-capitalize">• Life jacket
+                                </li>
+                                <li class="list-group-item text-capitalize">• speed boat</li>
+                            </ul>
+                            <div class="card-body d-flex justify-content-center  gap-4">
+                                <button class="btn border-black btn-book w-100"><a href="https://wa.me/201552378066"
+                                        class="text-decoration-none ">Book Now</a></button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+
+
+        <!-- Contact-->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Contact Us</h2>
+                    <h3 class="section-subheading text-muted">We are at your service. Do not hesitate to contact us</h3>
+                </div>
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- * * SB Forms Contact Form * *-->
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- This form is pre-integrated with SB Forms.-->
+                <!-- To make this form functional, sign up at-->
+                <!-- https://startbootstrap.com/solution/contact-forms-->
+                <!-- to get an API token!-->
+                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                    <div class="row align-items-stretch mb-5">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <!-- Name input-->
+                                <input class="form-control" id="name" type="text" placeholder="Your Name *"
+                                    data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                            </div>
+                            <div class="form-group">
+                                <!-- Email address input-->
+                                <input class="form-control" id="email" type="email" placeholder="Your Email *"
+                                    data-sb-validations="required,email" />
+                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.
+                                </div>
+                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                            </div>
+                            <div class="form-group mb-md-0">
+                                <!-- Phone number input-->
+                                <input class="form-control" id="phone" type="tel" placeholder="Your Phone *"
+                                    data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is
+                                    required.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group form-group-textarea mb-md-0">
+                                <!-- Message input-->
+                                <textarea class="form-control" id="message" placeholder="Your Message *"
+                                    data-sb-validations="required"></textarea>
+                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Submit success message-->
+                    <!---->
+                    <!-- This is what your users will see when the form-->
+                    <!-- has successfully submitted-->
+                    <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center text-white mb-3">
+                            <div class="fw-bolder">Form submission successful!</div>
+                            To activate this form, sign up at
+                            <br />
+
+                            <a aria-label="Chat on WhatsApp" href="https://wa.me/201552378066"> <img
+                                    alt="Chat on WhatsApp" src="assets/img/portfolio/WhatsAppButtonGreenLarge.png" />
+                            </a>
+
+                            <!-- <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>-->
+                        </div>
+                    </div>
+                    <!-- Submit error message-->
+                    <!---->
+                    <!-- This is what your users will see when there is-->
+                    <!-- an error submitting the form-->
+                    <div class="d-none" id="submitErrorMessage">
+                        <div class="text-center text-danger mb-3">Error sending message!</div>
+                    </div>
+                    <!-- Submit Button-->
+                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled"
+                            id="submitButton" type="submit">Send Message</button></div>
+                </form>
+            </div>
+        </section>
+        <!-- Footer-->
+        <!-- Footer-->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-start">Copyright &copy; ALBATROS TRAVEL 2024</div>
+                    <div class="col-lg-4 my-3 my-lg-0">
+                        <a class="btn btn-dark btn-social mx-2" href="https://web.facebook.com/"
+                            aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/"
+                            aria-label="instagram"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <!-- <div class="col-lg-4 text-lg-end">
+                    <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
+                    <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+                </div>-->
+                </div>
+            </div>
+        </footer>
+        <!-- Core JS-->
+        <script src="../js/scripts.js"></script>
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

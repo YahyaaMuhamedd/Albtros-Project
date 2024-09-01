@@ -91,6 +91,26 @@ html {
   scroll-padding-top: 4.5rem;
 }
 
+.rsv-mini {
+  height: 100%;
+
+  .image img {
+    height: 100%;
+    width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 992px) {
+  .rsv-mini {
+    flex-wrap: wrap;
+
+    .image img {
+      width: 100% !important;
+    }
+  }
+}
+
 .h90vh {
   height: 90vh;
 }

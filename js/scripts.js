@@ -207,7 +207,48 @@ const translations = {
         "no-coffee-trip": "Без поездок за кофе",
         "high-quality-services": "Высокое качество обслуживания",
         "best-price-guarantee": "Гарантия лучшей цены",
-        "insurance-included": "Включена страховка"
+        "insurance-included": "Включена страховка",
+        "Boat Trips": "Лодочные прогулки",
+        "Safari": "Сафари",
+        "Diving": "Дайвинг",
+        "Cairo": "Каир",
+        "Luxor": "Луксор",
+        "Sea Activity": "Морские развлечения",
+        excursions: "Excursions depuis Hurghada, El Gouna, Makady",
+        luxorPrivate: "Excursion privée à Louxor",
+        luxorTwoDays: "Louxor deux jours privé",
+        cairoPrivate: "Excursion privée au Caire",
+        cairoDayTrip: "Excursion d'une journée au Caire en avion",
+        cairoTwoDays: "Caire deux jours privé",
+        cairoExclusive: "Excursion d'une journée au Caire à la carte (exclusif)",
+        cairoPyramids: "Caire Pyramides de Gizeh, Saqqarah et Dahchour Exclusif",
+        denderaHalfDay: "Excursion d'une demi-journée à Dendera",
+        denderaAbydos: "Excursion à Dendera & Abydos d'une journée privée",
+        hurghadaCityTour: "Visite de la ville de Hurghada",
+        elGounaCityTour: "Visite de la ville d'El-Gouna",
+        aswanAbuSimbel: "Assouan & Abou Simbel deux jours privés",
+        monasteries: "Monastères de St. Antoine & St. Paul",
+        quadTour3Hours: "3 heures de quad + balade à dos de chameau",
+        quadTour5Hours: "5 heures de quad + balade à dos de chameau + dîner",
+        egyptDayTours: "Tours d'une journée en Égypte & Excursions à Hurghada",
+        varietyAndFun: "Des visites des monastères à une visite de la ville de Hurghada ; nous offrons beaucoup de variété et de plaisir pour toute la famille.",
+        luxorTrip: {
+            title: "Voyage à Louxor",
+            description: "Voyage à Louxor",
+            price: "60.00 EUR"
+        },
+        cairoTrip: {
+            title: "Voyage au Caire",
+            description: "Voyage au Caire",
+            price: "70.00 EUR"
+        },
+        hurghadaTrip: {
+            title: "Voyage à Hurghada",
+            title: "Voyage à Hurghada",
+            description: "Voyage à Hurghada",
+            price: "20.00 EUR",
+        },
+        moreDetails: "Plus de détails"
     }
 };
 

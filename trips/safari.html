@@ -31,81 +31,83 @@
         <div id="help-popup" class="popup">
             <div class="popup-content d-flex flex-column gap-3">
                 <span id="close-popup" class="close-button fs-3">&times;</span>
-                <p>If you have not found what you are looking for,
-                    please do not hesitate to write to us
-                    and we will help you as soon as possible!</p>
-                <button class="btn border-black btn-book w-100"><a href="https://wa.me/201552378066"
-                        class="text-decoration-none ">Send WhatsApp</a></button>
+                <p data-translate="help-text">If you have not found what you are looking for, please do not hesitate to
+                    write to us and we will help you as soon as possible!</p>
+                <button class="btn border-black btn-book w-100" data-translate="send-whatsapp-btn"><a
+                        href="https://wa.me/201552378066" class="text-decoration-none">Send WhatsApp</a></button>
             </div>
         </div>
     </div>
     <!-- End -->
-    <div class="position-fixed " style="bottom: 20px; right: 20px; z-index: 10000;">
+    <div class="position-fixed" style="bottom: 20px; right: 20px; z-index: 10000;">
         <a class="navbar-brand text-center text-white" href="https://wa.me/201552378066">
             <img src="../assets/img/whatsapp.png" alt="WhatsApp" width="60px" height="60px">
         </a>
     </div>
     <!-- Navigation-->
-    <div class="call py-1 d-flex flex-column bg-dark ">
-        <a class="navbar-brand text-center text-white" href="https://wa.me/201552378066">
+    <div class="call py-1 d-flex flex-column bg-dark">
+        <a class="navbar-brand text-center text-white" href="https://wa.me/201552378066"
+            data-translate="call-or-whatsapp">
             <img src="../assets/img/whatsapp.png" alt="WhatsApp" width="25px" height="25px">
-            Call Or WhatsApp :
-            +201552378066
+            Call Or WhatsApp : +201552378066
         </a>
     </div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="mainNav">
-        <div class="container ps-4 pe-4 rv-logo">
-
-            <a class="navbar-brand" href="../index.html"><img src="../assets/img/Asset3.png" alt=""
+        <div class="container ps-4 pe-4 rv-logo bg-dark">
+            <a class="navbar-brand" href="../index.html"><img src="../assets/img/Asset3.png" alt="..."
                     class="nav-logo" /></a>
-            <button class="navbar-toggler position-relative hamburger-init" onclick="menuBtnFunction(this)"
-                type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-
-                <span class="bar top-bar"></span>
-                <span class="bar middle-bar"></span>
-                <span class="bar bottom-bar"></span>
-
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                    <li class="nav-item"><a class="nav-link text-warning" href="../index.html"><i
-                                class="fa-solid fa-house"></i> Home
+                    <li class="nav-item"><a class="nav-link text-warning" href="../index.html" data-translate="home">
+                            <i class="fa-solid fa-house"></i> Home
                         </a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-warning " href="#" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle text-warning" id="trips" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" data-translate="trips">
                             Trips
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="../trips/boattrips.html">Boat Trips</a></li>
-                            <li><a class="dropdown-item" href="../trips/safari.html">Safari</a></li>
-                            <li><a class="dropdown-item" href="../trips/diving.html">Diving</a></li>
+                            <li class="nav-link"><a class="dropdown-item" href="../trips/boattrips.html"
+                                    data-translate="boat-trips">Boat Trips</a></li>
+                            <li class="nav-link"><a class="dropdown-item" href="../trips/safari.html"
+                                    data-translate="safari">Safari</a></li>
+                            <li class="nav-link"><a class="dropdown-item" href="../trips/diving.html"
+                                    data-translate="diving">Diving</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link text-warning" href="../Hotels.html">Hotels</a></li>
-                    <li class="nav-item dropdown ">
+                    <li class="nav-item"><a class="nav-link text-warning" href="../Hotels.html"
+                            data-translate="hotels">Hotels</a></li>
+                    <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-warning" role="button" href="citytours.html"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                            data-bs-toggle="dropdown" aria-expanded="false" data-translate="city-tours">
                             City Tours</a>
                         <ul class="dropdown-menu">
-                            <li class="nav-link"><a class="dropdown-item" href="../CityTours/hurghada.html">hurghada</a>
-                            </li>
-                            <li class="nav-link"><a class="dropdown-item" href="../CityTours/Gouna.html">El Gouna</a>
-                            </li>
+                            <li class="nav-link"><a class="dropdown-item" href="../CityTours/hurghada.html"
+                                    data-translate="hurghada">Hurghada</a></li>
+                            <li class="nav-link"><a class="dropdown-item" href="../CityTours/Gouna.html"
+                                    data-translate="el-gouna">El Gouna</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link text-warning" href="../travels.html">Travels</a></li>
-                    <li class="nav-item"><a class="nav-link text-warning" href="../About.html">About</a></li>
-                    <li class="nav-item dropdown d-none">
-                        <a class="nav-link dropdown-toggle text-warning" href="#" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                    <li class="nav-item"><a class="nav-link text-warning" href="../travels.html"
+                            data-translate="travels">Travels</a></li>
+                    <li class="nav-item"><a class="nav-link text-warning" href="../transport.html"
+                            data-translate="travels">Transport</a></li>
+                    <li class="nav-item"><a class="nav-link text-warning" href="../About.html"
+                            data-translate="about">About</a></li>
+                    <li class="nav-item dropdown">
+                        <!-- <a class="nav-link dropdown-toggle text-warning" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" data-translate="language">
                             Language
-                        </a>
+                        </a> -->
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#" onclick="changeLanguage('en')">English</a></li>
-                            <li><a class="dropdown-item" href="#" onclick="changeLanguage('ar')">العربية</a></li>
-                            <li><a class="dropdown-item" href="#" onclick="changeLanguage('ru')">Русский</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="changeLanguage('en')" id="english-btn"
+                                    data-translate="english">English</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="changeLanguage('ru')" id="russian-btn"
+                                    data-translate="russian">Русский</a></li>
                         </ul>
                     </li>
                 </ul>

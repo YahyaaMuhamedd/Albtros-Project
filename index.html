@@ -105,7 +105,7 @@
                             <li><a class="dropdown-item" href="#" onclick="changeLanguage('en')" id="english-btn"
                                     data-translate="english">English</a></li>
                             <li><a class="dropdown-item" href="#" onclick="changeLanguage('ru')" id="russian-btn"
-                                    data-translate="russian">Русский</a></li>
+                                    data-translate="russian">Deutch</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -1125,6 +1125,30 @@
             </div>
         </div>
     </div>
+
+    <div class="container my-5">
+        <form id="commentForm">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="comment" class="form-label">Comment</label>
+                <textarea class="form-control" id="comment" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+        <div id="commentsSection" class="mt-4">
+            <h5>Comments:</h5>
+            <div id="commentsList"></div>
+        </div>
+    </div>
+
 
     <!-- Contact-->
     <section class="page-section" id="contact">

@@ -1056,7 +1056,7 @@ form.addEventListener('submit', async (event) => {
     const comment = document.getElementById('comment').value;
 
     // Send data to MongoDB
-    const response = await fetch('http://localhost:3000/comments', {
+    const response = await fetch('http://yahia-task-8dey.vercel.app/comments', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -1079,7 +1079,7 @@ form.addEventListener('submit', async (event) => {
 
 async function fetchComments() {
     try {
-        const response = await fetch('http://localhost:3000/comments');
+        const response = await fetch('http://yahia-task-8dey.vercel.app/comments');
 
         if (!response.ok) throw new Error('Network response was not ok');
 

@@ -1084,7 +1084,7 @@ async function fetchComments() {
         if (!response.ok) throw new Error('Network response was not ok');
 
         const data = await response.json();
-        console.log(data); // Log the response to confirm structure
+        // console.log(data); // Log the response to confirm structure
 
         // Check if data has the 'comments' property and if it's an array
         if (data && Array.isArray(data.comments)) {
